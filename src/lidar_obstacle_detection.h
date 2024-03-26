@@ -1,3 +1,9 @@
+/*
+ * @Author: xiaohu
+ * @Date: 2022-04-02 00:26:55
+ * @Last Modified by: xiaohu
+ * @Last Modified time: 2022-04-02 01:12:59
+ */
 
 #ifndef LIDAR_DETECTION_TRACK_H_
 #define LIDAR_DETECTION_TRACK_H_
@@ -5,6 +11,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <mutex>
 
 #include <ros/ros.h>
 #include <pcl_conversions/pcl_conversions.h>
@@ -19,30 +26,30 @@
 #include "autoware_msgs/DetectedObjectArray.h"
 #include <visualization_msgs/Marker.h>
 #include <visualization_msgs/MarkerArray.h>
-#include <opencv/cv.h>
-#include <opencv/highgui.h>
+#include <opencv2/opencv.hpp>
+#include <opencv2/highgui.hpp>
 #include <opencv2/core/version.hpp>
 
 #include "../lib/ground_detector/patchwork/patchwork.h"
 #include "../lib/visualization/visualize_detected_objects.h"
 #include "../lib/pre_process/roi_clip/roi_clip.h"
-#include "../lib/cluster/euclideanCluster/euclideanCluster.h"
+#include "../lib/euclidean_cluster/euclidean_cluster.h"
 #include "../lib/pre_process/voxel_grid_filter/voxel_grid_filter.h"
 #include "../lib/bounding_box/bounding_box.h"
 #include "../lib/visualization/visualize_detected_objects.h"
 
-class lidarPerception
+class lidarObstacleDetection
 {
 public:
-    lidarPerception(ros::NodeHandle nh, ros::NodeHandle pnh);
-    ~lidarPerception(){};
+    lidarObstacleDetection(ros::NodeHandle nh, ros::NodeHandle pnh);
+    ~lidarObstacleDetection(){};
 
-    RoiClip roiClip_;
-    VoxelGridFilter voxelGridFilter_;
-    PatchWork patchWork_;
+    RoiClip roi_clip_;
+    VoxelGridFilter voxel_grid_filter_;
+    PatchWork patch_work_;
     EuclideanCluster cluster_;
 
-    BoundingBox boundingBox_;
+    BoundingBox bounding_box_;
     VisualizeDetectedObjects vdo_;
 
     ros::Publisher _pub_clip_cloud;
@@ -59,13 +66,9 @@ public:
 
     VisualizeDetectedObjects vdto;
 
-    // lidar::PointPillars pointpillars;
-
 private:
     void ClusterCallback(const sensor_msgs::PointCloud2ConstPtr &in_sensor_cloud);
-    // void pointPillarsCallback(const sensor_msgs::PointCloud2ConstPtr &in_sensor_cloud);
     void publishDetectedObjects(const autoware_msgs::CloudClusterArray &in_clusters, autoware_msgs::DetectedObjectArray &detected_objects);
-    // void Bbox3DToObjectArray(std_msgs::Header header, std::vector<lidar::Bbox3D> &boxes,autoware_msgs::DetectedObjectArray &detected_objects);
 };
 
 #endif
