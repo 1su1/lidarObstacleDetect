@@ -1,15 +1,10 @@
 
-本代码传统聚类障碍物检测流程：
-
-![image](https://user-images.githubusercontent.com/42265454/223046960-d721c7b7-c4ac-4431-98ae-bc0072e17686.png)
-
-
 1.安装相应的 ros 依赖包
 ```
-sudo apt-get install ros-melodic-jsk-rviz-plugins
-sudo apt-get install ros-melodic-jsk-recognition-msgs
-sudo apt-get install ros-melodic-autoware-msgs
-sudo apt-get install ros-melodic-visualization-msgs
+sudo apt-get install ros-noetic-jsk-rviz-plugins
+sudo apt-get install ros-noetic-jsk-recognition-msgs
+sudo apt-get install ros-noetic-autoware-msgs
+sudo apt-get install ros-noetic-visualization-msgs
 ```
 
 2.启动
@@ -40,4 +35,4 @@ launch有两个节点，运行launch直接会打开rviz可视化
 
 上图为bounding_box未加方向，加方向后，效果不太好，对于道路两边的区域的姿态估计显然会不准确，可以将`isEstimatePose`字段设置为true，观测添加姿态估计后的效果
 
-业余写的一个粗版demo，有很多地方是可以改进的，大家自行修改吧
+

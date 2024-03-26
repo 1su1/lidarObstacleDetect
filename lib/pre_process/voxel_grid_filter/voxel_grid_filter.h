@@ -1,4 +1,9 @@
-
+/*
+ * @Author: xiaohu
+ * @Date: 2022-04-02 00:26:55
+ * @Last Modified by: xiaohu
+ * @Last Modified time: 2022-04-02 01:12:59
+ */
 
 #ifndef DOWNSAMPLER_H
 #define DOWNSAMPLER_H
