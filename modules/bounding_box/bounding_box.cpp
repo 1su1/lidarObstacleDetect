@@ -1,4 +1,3 @@
-
 #include "bounding_box.h"
 
 void checkClusterMerge(std_msgs::Header header, size_t in_cluster_id,

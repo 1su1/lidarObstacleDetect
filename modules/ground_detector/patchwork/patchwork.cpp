@@ -1,7 +1,5 @@
 #include "patchwork.h"
 
-
-
 PatchWork::PatchWork()
 {
     sensor_height_                  = 1.723;

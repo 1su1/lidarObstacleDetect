@@ -1,10 +1,3 @@
-/*
- * @Author: xiaohu
- * @Date: 2022-04-02 00:26:55
- * @Last Modified by: xiaohu
- * @Last Modified time: 2022-04-02 01:12:59
- */
-
 #ifndef LIDAR_DETECTION_TRACK_H_
 #define LIDAR_DETECTION_TRACK_H_
 
@@ -30,12 +23,12 @@
 #include <visualization_msgs/Marker.h>
 #include <visualization_msgs/MarkerArray.h>
 
-#include "../lib/bounding_box/bounding_box.h"
-#include "../lib/euclidean_cluster/euclidean_cluster.h"
-#include "../lib/ground_detector/patchwork/patchwork.h"
-#include "../lib/pre_process/roi_clip/roi_clip.h"
-#include "../lib/pre_process/voxel_grid_filter/voxel_grid_filter.h"
-#include "../lib/visualization/visualize_detected_objects.h"
+#include "bounding_box/bounding_box.h"
+#include "euclidean_cluster/euclidean_cluster.h"
+#include "ground_detector/patchwork/patchwork.h"
+#include "pre_process/roi_clip/roi_clip.h"
+#include "pre_process/voxel_grid_filter/voxel_grid_filter.h"
+#include "visualization/visualize_detected_objects.h"
 
 class lidarObstacleDetection
 {

@@ -21,20 +21,20 @@ catkin_package(
 )
 
 include_directories(
-  include
+  ${CMAKE_CURRENT_SOURCE_DIR}/modules
   ${catkin_INCLUDE_DIRS}
 )
 
 # 添加子目录并构建
-add_subdirectory(lib/pre_process/roi_clip)
-add_subdirectory(lib/pre_process/voxel_grid_filter)
-add_subdirectory(lib/euclidean_cluster)
-add_subdirectory(lib/bounding_box)
-add_subdirectory(lib/ground_detector/patchwork)
-# add_subdirectory(lib/ground_detector/patchworkpp)
-add_subdirectory(lib/visualization)
+add_subdirectory(modules/pre_process/roi_clip)
+add_subdirectory(modules/pre_process/voxel_grid_filter)
+add_subdirectory(modules/euclidean_cluster)
+add_subdirectory(modules/bounding_box)
+add_subdirectory(modules/ground_detector/patchwork)
+# add_subdirectory(modules/ground_detector/patchworkpp)
+add_subdirectory(modules/visualization)
 
-add_executable(${PROJECT_NAME}_node src/lidar_obstacle_detection_node.cpp src/lidar_obstacle_detection.cpp)
+add_executable(${PROJECT_NAME}_node main/lidar_obstacle_detection_node.cpp main/lidar_obstacle_detection.cpp)
 
 target_link_libraries(${PROJECT_NAME}_node
   ${OpenCV_LIBRARIES}
@@ -47,5 +47,3 @@ target_link_libraries(${PROJECT_NAME}_node
   patchwork
   visualization
  )
-
-

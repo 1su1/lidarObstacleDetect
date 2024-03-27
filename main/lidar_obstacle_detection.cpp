@@ -1,10 +1,3 @@
-/*
- * @Author: xiaohu
- * @Date: 2022-04-02 00:26:55
- * @Last Modified by: xiaohu
- * @Last Modified time: 2022-04-02 01:12:59
- */
-
 #include "lidar_obstacle_detection.h"
 
 // 时间统计
@@ -75,7 +68,7 @@ void lidarObstacleDetection::ClusterCallback(
     voxel_grid_filter_.downsample(clip_cloud_ptr, downsampled_cloud_ptr);
 
     // 地面分割
-    patch_work_pp_.estimate_ground(downsampled_cloud_ptr, ground_cloud_ptr, noground_cloud_ptr);
+    patch_work_.estimate_ground(downsampled_cloud_ptr, ground_cloud_ptr, noground_cloud_ptr);
     int64_t tm2 = gtm();
     ROS_INFO("remove ground cost time:%ld ms", (tm2 - tm1) / 1000);
 
@@ -99,7 +92,6 @@ void lidarObstacleDetection::ClusterCallback(
     _pub_cluster_visualize_markers.publish(visualize_markers);
 
     // 发布topic
-
     publishCloud(&_pub_clip_cloud, in_sensor_cloud->header, clip_cloud_ptr);
     publishCloud(&_pub_noground_cloud, in_sensor_cloud->header, noground_cloud_ptr);
     publishCloud(&_pub_cluster_cloud, in_sensor_cloud->header, outCloudPtr);

@@ -17,8 +17,6 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-
-
 aux_source_directory(. DIR_SRCS)
 
 #SHARED 动态库
