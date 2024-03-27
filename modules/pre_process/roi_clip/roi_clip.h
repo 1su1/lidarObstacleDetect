@@ -9,7 +9,7 @@ class RoiClip
 {
 public:
     RoiClip(ros::NodeHandle node_handle, ros::NodeHandle private_node_handle);
-    ~RoiClip(){};
+    ~RoiClip();
     pcl::PointCloud<pcl::PointXYZI>::Ptr GetROI(const pcl::PointCloud<pcl::PointXYZI>::Ptr in,
                                                 pcl::PointCloud<pcl::PointXYZI>::Ptr&      out);
     pcl::PointCloud<pcl::PointXYZI>::Ptr ClipVehicle(const pcl::PointCloud<pcl::PointXYZI>::Ptr in);

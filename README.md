@@ -9,7 +9,7 @@ sudo apt-get install ros-noetic-visualization-msgs
 
 2.启动
 ```
-rosbag play -l kitti_2011_09_30_drive_0016_synced.bag /kitti/velo/pointcloud:=/velodyne_points
+ROS_NAMESPACE=/pylon_camera_node rosrun image_proc image_proc
 roslaunch lidar_obstacle_detection lidar_obstacle_detection.launch
 ```
 launch有两个节点，运行launch直接会打开rviz可视化

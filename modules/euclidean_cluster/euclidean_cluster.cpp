@@ -33,9 +33,11 @@ void EuclideanCluster::segmentByDistance(
     std::vector<pcl::PointCloud<pcl::PointXYZI>::Ptr>& points_vector)
 {
     std::vector<pcl::PointIndices> cluster_indices;
-    if (!use_multiple_thres_) {
+    if (!use_multiple_thres_)
+    {
         cluster_vector(in, cluster_indices);
-        for (auto it = cluster_indices.begin(); it != cluster_indices.end(); ++it) {
+        for (auto it = cluster_indices.begin(); it != cluster_indices.end(); ++it)
+        {
             pcl::PointCloud<pcl::PointXYZI>::Ptr temp_cloud_ptr(
                 new pcl::PointCloud<pcl::PointXYZI>);
             pcl::copyPointCloud(*in, it->indices, *temp_cloud_ptr);
@@ -43,14 +45,17 @@ void EuclideanCluster::segmentByDistance(
             points_vector.push_back(temp_cloud_ptr);
         }
     }
-    else {
+    else
+    {
         std::vector<pcl::PointCloud<pcl::PointXYZI>::Ptr> cloud_segments_array(5);
-        for (unsigned int i = 0; i < cloud_segments_array.size(); i++) {
+        for (unsigned int i = 0; i < cloud_segments_array.size(); i++)
+        {
             pcl::PointCloud<pcl::PointXYZI>::Ptr tmp_cloud(new pcl::PointCloud<pcl::PointXYZI>);
             cloud_segments_array[i] = tmp_cloud;
         }
 
-        for (unsigned int i = 0; i < in->points.size(); i++) {
+        for (unsigned int i = 0; i < in->points.size(); i++)
+        {
             pcl::PointXYZI current_point;
             current_point.x         = in->points[i].x;
             current_point.y         = in->points[i].y;
@@ -59,25 +64,31 @@ void EuclideanCluster::segmentByDistance(
 
             float origin_distance = sqrt(pow(current_point.x, 2) + pow(current_point.y, 2));
 
-            if (origin_distance < clustering_ranges_[0]) {
+            if (origin_distance < clustering_ranges_[0])
+            {
                 cloud_segments_array[0]->points.push_back(current_point);
             }
-            else if (origin_distance < clustering_ranges_[1]) {
+            else if (origin_distance < clustering_ranges_[1])
+            {
                 cloud_segments_array[1]->points.push_back(current_point);
             }
-            else if (origin_distance < clustering_ranges_[2]) {
+            else if (origin_distance < clustering_ranges_[2])
+            {
                 cloud_segments_array[2]->points.push_back(current_point);
             }
-            else if (origin_distance < clustering_ranges_[3]) {
+            else if (origin_distance < clustering_ranges_[3])
+            {
                 cloud_segments_array[3]->points.push_back(current_point);
             }
-            else {
+            else
+            {
                 cloud_segments_array[4]->points.push_back(current_point);
             }
         }
 
         std::vector<std::thread> thread_vec(cloud_segments_array.size());
-        for (unsigned int i = 0; i < cloud_segments_array.size(); i++) {
+        for (unsigned int i = 0; i < cloud_segments_array.size(); i++)
+        {
             // 这种获取多线程返回值写法，运行速度慢，大家有兴趣自行更改，我懒改了，这是粗版demo
             std::promise<std::vector<pcl::PointIndices>>       promiseObj;
             std::shared_future<std::vector<pcl::PointIndices>> futureObj = promiseObj.get_future();
@@ -87,7 +98,8 @@ void EuclideanCluster::segmentByDistance(
                                         std::ref(clustering_distances_[i]),
                                         std::ref(promiseObj));
             cluster_indices = futureObj.get();
-            for (int j = 0; j < cluster_indices.size(); j++) {
+            for (int j = 0; j < cluster_indices.size(); j++)
+            {
                 pcl::PointCloud<pcl::PointXYZI>::Ptr temp_cloud_ptr(
                     new pcl::PointCloud<pcl::PointXYZI>);
                 pcl::copyPointCloud(*cloud_segments_array[i], cluster_indices[j], *temp_cloud_ptr);
@@ -96,7 +108,8 @@ void EuclideanCluster::segmentByDistance(
             }
         }
 
-        for (int i = 0; i < thread_vec.size(); i++) {
+        for (int i = 0; i < thread_vec.size(); i++)
+        {
             thread_vec[i].join();
         }
     }

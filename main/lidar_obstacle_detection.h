@@ -25,43 +25,48 @@
 
 #include "bounding_box/bounding_box.h"
 #include "euclidean_cluster/euclidean_cluster.h"
-#include "ground_detector/patchwork/patchwork.h"
+#include "ground_detector/patchworkpp/patchworkpp.h"
 #include "pre_process/roi_clip/roi_clip.h"
 #include "pre_process/voxel_grid_filter/voxel_grid_filter.h"
 #include "visualization/visualize_detected_objects.h"
 
-class lidarObstacleDetection
+class LidarObstacleDetection
 {
+
 public:
-    lidarObstacleDetection(ros::NodeHandle nh, ros::NodeHandle pnh);
-    ~lidarObstacleDetection(){};
+    LidarObstacleDetection(ros::NodeHandle nh, ros::NodeHandle pnh);
+    ~LidarObstacleDetection(){};
 
-    RoiClip          roi_clip_;
-    VoxelGridFilter  voxel_grid_filter_;
-    PatchWork        patch_work_;
-    EuclideanCluster cluster_;
+private:
+    void    ClusterCallback(const sensor_msgs::PointCloud2ConstPtr& in_sensor_cloud);
+    void    PublishDetectedObjects(const autoware_msgs::CloudClusterArray& in_clusters,
+                                   autoware_msgs::DetectedObjectArray&     detected_objects);
+    int64_t GetTime();
+    void    PublishCloud(const ros::Publisher* in_publisher, std_msgs::Header header,
+                         const pcl::PointCloud<pcl::PointXYZI>::Ptr in_cloud_to_publish_ptr);
 
+private:
+    RoiClip                  roi_clip_;
+    VoxelGridFilter          voxel_grid_filter_;
+    PatchWorkpp              patch_work_;
+    EuclideanCluster         cluster_;
     BoundingBox              bounding_box_;
     VisualizeDetectedObjects vdo_;
 
-    ros::Publisher _pub_clip_cloud;
-    ros::Publisher _pub_ground_cloud;
-    ros::Publisher _pub_noground_cloud;
-    ros::Publisher _pub_cluster_cloud;
-    ros::Publisher _pub_clusters_message;
+    ros::Publisher pub_clip_cloud_;
+    ros::Publisher pub_ground_cloud_;
+    ros::Publisher pub_noground_cloud_;
+    ros::Publisher pub_cluster_cloud_;
+    ros::Publisher pub_clusters_message_;
+    ros::Publisher pub_detected_objects_;
+    ros::Publisher pub_detected_3Dobjects_;
+    ros::Publisher pub_cluster_visualize_markers_;
+    ros::Publisher pub_3Dobjects_visualize_markers_;
 
-    ros::Publisher _pub_detected_objects;
-    ros::Publisher _pub_detected_3Dobjects;
-
-    ros::Publisher _pub_cluster_visualize_markers;
-    ros::Publisher _pub_3Dobjects_visualize_markers;
-
-    VisualizeDetectedObjects vdto;
-
-private:
-    void ClusterCallback(const sensor_msgs::PointCloud2ConstPtr& in_sensor_cloud);
-    void publishDetectedObjects(const autoware_msgs::CloudClusterArray& in_clusters,
-                                autoware_msgs::DetectedObjectArray&     detected_objects);
+    // 时间统计
+    int64_t euclidean_time_;
+    int64_t total_time_;
+    int     counter_;
 };
 
 #endif

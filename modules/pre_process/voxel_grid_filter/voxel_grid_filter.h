@@ -33,14 +33,15 @@ class VoxelGridFilter
 public:
     VoxelGridFilter();
     VoxelGridFilter(ros::NodeHandle node_handle, ros::NodeHandle private_node_handle);
-
     ~VoxelGridFilter();
 
-    void downsample(const pcl::PointCloud<pcl::PointXYZI>::Ptr& in_cloud,
+    void Downsample(const pcl::PointCloud<pcl::PointXYZI>::Ptr& in_cloud,
                     pcl::PointCloud<pcl::PointXYZI>::Ptr&       out_cloud);
-    //下采样：体素滤波参数
-    double leafSize;
-    bool   isDownsample;
+
+private:
+    // 下采样：体素滤波参数
+    double leaf_size_;
+    bool   is_downsample_;
 };
 
 #endif   // DOWNSAMPLER_H

@@ -7,11 +7,14 @@ void checkClusterMerge(std_msgs::Header header, size_t in_cluster_id,
 {
     // std::cout << "checkClusterMerge" << std::endl;
     pcl::PointXYZ point_a = in_clusters[in_cluster_id]->centroid_;
-    for (size_t i = 0; i < in_clusters.size(); i++) {
-        if (i != in_cluster_id && !in_out_visited_clusters[i]) {
+    for (size_t i = 0; i < in_clusters.size(); i++)
+    {
+        if (i != in_cluster_id && !in_out_visited_clusters[i])
+        {
             pcl::PointXYZ point_b = in_clusters[i]->centroid_;
             double distance = sqrt(pow(point_b.x - point_a.x, 2) + pow(point_b.y - point_a.y, 2));
-            if (distance <= in_merge_threshold) {
+            if (distance <= in_merge_threshold)
+            {
                 in_out_visited_clusters[i] = true;
                 out_merge_indices.push_back(i);
                 // std::cout << "Merging " << in_cluster_id << " with " << i << " dist:" << distance
@@ -36,16 +39,19 @@ void mergeClusters(std_msgs::Header header, std::vector<BoundingBoxPtr>& in_clus
     pcl::PointCloud<pcl::PointXYZRGB> sum_cloud;
     pcl::PointCloud<pcl::PointXYZI>   mono_cloud;
     BoundingBoxPtr                    merged_cluster(new BoundingBox());
-    for (size_t i = 0; i < in_merge_indices.size(); i++) {
+    for (size_t i = 0; i < in_merge_indices.size(); i++)
+    {
         sum_cloud += *(in_clusters[in_merge_indices[i]]->pointCloud_);
         in_out_merged_clusters[in_merge_indices[i]] = true;
     }
     std::vector<int> indices(sum_cloud.points.size(), 0);
-    for (size_t i = 0; i < sum_cloud.points.size(); i++) {
+    for (size_t i = 0; i < sum_cloud.points.size(); i++)
+    {
         indices[i] = i;
     }
 
-    if (sum_cloud.points.size() > 0) {
+    if (sum_cloud.points.size() > 0)
+    {
         pcl::copyPointCloud(sum_cloud, mono_cloud);
         merged_cluster->SetCloud(header, mono_cloud.makeShared(), in_estimate_pose_);
         out_clusters.push_back(merged_cluster);
@@ -60,8 +66,10 @@ void checkAllForMerge(std_msgs::Header header, std::vector<BoundingBoxPtr>& in_c
     std::vector<bool> visited_clusters(in_clusters.size(), false);
     std::vector<bool> merged_clusters(in_clusters.size(), false);
     size_t            current_index = 0;
-    for (size_t i = 0; i < in_clusters.size(); i++) {
-        if (!visited_clusters[i]) {
+    for (size_t i = 0; i < in_clusters.size(); i++)
+    {
+        if (!visited_clusters[i])
+        {
             visited_clusters[i] = true;
             std::vector<size_t> merge_indices;
             checkClusterMerge(
@@ -75,9 +83,11 @@ void checkAllForMerge(std_msgs::Header header, std::vector<BoundingBoxPtr>& in_c
                           in_estimate_pose_);
         }
     }
-    for (size_t i = 0; i < in_clusters.size(); i++) {
+    for (size_t i = 0; i < in_clusters.size(); i++)
+    {
         // check for clusters not merged, add them to the output
-        if (!merged_clusters[i]) {
+        if (!merged_clusters[i])
+        {
             out_clusters.push_back(in_clusters[i]);
         }
     }
@@ -110,7 +120,8 @@ void BoundingBox::SetCloud(std_msgs::Header header, const pcl::PointCloud<pcl::P
     float                                  max_z     = -std::numeric_limits<float>::max();
     float                                  average_x = 0, average_y = 0, average_z = 0;
 
-    for (int i = 0; i < in->points.size(); i++) {
+    for (int i = 0; i < in->points.size(); i++)
+    {
         // fill new colored cluster point by point
         pcl::PointXYZRGB p;
         p.x = in->points[i].x;
@@ -141,7 +152,8 @@ void BoundingBox::SetCloud(std_msgs::Header header, const pcl::PointCloud<pcl::P
     max_point_.z = max_z;
 
     // calculate centroid, average
-    if (in->points.size() > 0) {
+    if (in->points.size() > 0)
+    {
         centroid_.x /= in->points.size();
         centroid_.y /= in->points.size();
         centroid_.z /= in->points.size();
@@ -174,7 +186,8 @@ void BoundingBox::SetCloud(std_msgs::Header header, const pcl::PointCloud<pcl::P
     double rz = 0;
 
     std::vector<cv::Point2f> points;
-    for (unsigned int i = 0; i < currentCluster->points.size(); i++) {
+    for (unsigned int i = 0; i < currentCluster->points.size(); i++)
+    {
         cv::Point2f pt;
         pt.x = currentCluster->points[i].x;
         pt.y = currentCluster->points[i].y;
@@ -185,7 +198,8 @@ void BoundingBox::SetCloud(std_msgs::Header header, const pcl::PointCloud<pcl::P
     cv::convexHull(points, hull);
 
     polygon_.header = header;
-    for (size_t i = 0; i < hull.size() + 1; i++) {
+    for (size_t i = 0; i < hull.size() + 1; i++)
+    {
         geometry_msgs::Point32 point;
         point.x = hull[i % hull.size()].x;
         point.y = hull[i % hull.size()].y;
@@ -193,7 +207,8 @@ void BoundingBox::SetCloud(std_msgs::Header header, const pcl::PointCloud<pcl::P
         polygon_.polygon.points.push_back(point);
     }
 
-    if (in_estimate_pose) {
+    if (in_estimate_pose)
+    {
         cv::RotatedRect box           = minAreaRect(hull);
         rz                            = box.angle * 3.14 / 180;
         bounding_box_.pose.position.x = box.center.x;
@@ -213,7 +228,8 @@ void BoundingBox::SetCloud(std_msgs::Header header, const pcl::PointCloud<pcl::P
     currentCluster->is_dense = true;
 
     // Get EigenValues, eigenvectors
-    if (currentCluster->points.size() > 3) {
+    if (currentCluster->points.size() > 3)
+    {
         pcl::PCA<pcl::PointXYZ>             currentClusterPca;
         pcl::PointCloud<pcl::PointXYZ>::Ptr current_cluster_mono(
             new pcl::PointCloud<pcl::PointXYZ>);
@@ -234,7 +250,8 @@ void BoundingBox::getBoundingBox(std_msgs::Header                               
                                  autoware_msgs::CloudClusterArray&                  inOutClusters)
 {
     std::vector<BoundingBoxPtr> Clusters;
-    for (int i = 0; i < points_vector.size(); i++) {
+    for (int i = 0; i < points_vector.size(); i++)
+    {
         // pcl::PointCloud<pcl::PointXYZI>::Ptr temp_cluster(new pcl::PointCloud<pcl::PointXYZI>);
         // pcl::copyPointCloud(*in, it->indices, *temp_cluster);
         // *outCloudPtr += *temp_cluster;
@@ -262,8 +279,10 @@ void BoundingBox::getBoundingBox(std_msgs::Header                               
         finalClusters = midClusters;
 
     // Get final PointCloud to be published
-    for (unsigned int i = 0; i < Clusters.size(); i++) {
-        if (Clusters[i]->validCluster_) {
+    for (unsigned int i = 0; i < Clusters.size(); i++)
+    {
+        if (Clusters[i]->validCluster_)
+        {
             autoware_msgs::CloudCluster cloudCluster;
             Clusters[i]->ToROSMessage(header, cloudCluster);
             inOutClusters.clusters.push_back(cloudCluster);
@@ -317,7 +336,8 @@ void BoundingBox::ToROSMessage(std_msgs::Header             header,
     outClusterMessage.eigen_values.z = eigen_values.z();
 
     Eigen::Matrix3f eigen_vectors = this->eigen_vectors_;
-    for (unsigned int i = 0; i < 3; i++) {
+    for (unsigned int i = 0; i < 3; i++)
+    {
         geometry_msgs::Vector3 eigen_vector;
         eigen_vector.x = eigen_vectors(i, 0);
         eigen_vector.y = eigen_vectors(i, 1);

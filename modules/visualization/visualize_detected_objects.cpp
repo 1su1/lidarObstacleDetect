@@ -134,8 +134,10 @@ visualization_msgs::MarkerArray VisualizeDetectedObjects::ObjectsToCentroids(
     const autoware_msgs::DetectedObjectArray& in_objects)
 {
     visualization_msgs::MarkerArray centroid_markers;
-    for (auto const& object : in_objects.objects) {
-        if (IsObjectValid(object)) {
+    for (auto const& object : in_objects.objects)
+    {
+        if (IsObjectValid(object))
+        {
             visualization_msgs::Marker centroid_marker;
             centroid_marker.lifetime = ros::Duration(marker_display_duration_);
 
@@ -149,10 +151,12 @@ visualization_msgs::MarkerArray VisualizeDetectedObjects::ObjectsToCentroids(
             centroid_marker.scale.y = 0.5;
             centroid_marker.scale.z = 0.5;
 
-            if (object.color.a == 0) {
+            if (object.color.a == 0)
+            {
                 centroid_marker.color = centroid_color_;
             }
-            else {
+            else
+            {
                 centroid_marker.color = object.color;
             }
             centroid_marker.id = marker_id_++;
@@ -167,10 +171,12 @@ visualization_msgs::MarkerArray VisualizeDetectedObjects::ObjectsToCubes(
 {
     visualization_msgs::MarkerArray object_boxes;
 
-    for (auto const& object : in_objects.objects) {
+    for (auto const& object : in_objects.objects)
+    {
         if (IsObjectValid(object) && (object.pose_reliable || object.label == "unknown") &&
             (object.dimensions.x + object.dimensions.y + object.dimensions.z) <
-                object_max_linear_size_) {
+                object_max_linear_size_)
+        {
             visualization_msgs::Marker box;
             box.lifetime      = ros::Duration(marker_display_duration_);
             box.header        = in_objects.header;
@@ -184,10 +190,12 @@ visualization_msgs::MarkerArray VisualizeDetectedObjects::ObjectsToCubes(
             // if (object.pose_reliable)
             box.pose.orientation = object.pose.orientation;
 
-            if (object.color.a == 0) {
+            if (object.color.a == 0)
+            {
                 box.color = cube_color_;
             }
-            else {
+            else
+            {
                 box.color = object.color;
             }
 
@@ -202,10 +210,12 @@ visualization_msgs::MarkerArray VisualizeDetectedObjects::ObjectsToBoxes(
     const autoware_msgs::DetectedObjectArray& in_objects)
 {
     visualization_msgs::MarkerArray object_boxes;
-    for (auto const& object : in_objects.objects) {
+    for (auto const& object : in_objects.objects)
+    {
         if (IsObjectValid(object) && (object.pose_reliable || object.label == "unknown") &&
             (object.dimensions.x + object.dimensions.y + object.dimensions.z) <
-                object_max_linear_size_) {
+                object_max_linear_size_)
+        {
             visualization_msgs::Marker box;
             box.lifetime = ros::Duration(marker_display_duration_);   // marker_display_duration_
             box.header   = in_objects.header;
@@ -258,7 +268,8 @@ visualization_msgs::MarkerArray VisualizeDetectedObjects::ObjectsToBoxes(
 
 
             // if (object.pose_reliable){
-            if (true) {
+            if (true)
+            {
                 // // 方法1: 欧拉角求旋转平移矩阵
                 // float angle = object.pose.orientation;
                 // float cos_ = cos(angle);
@@ -286,7 +297,8 @@ visualization_msgs::MarkerArray VisualizeDetectedObjects::ObjectsToBoxes(
                     2 * y * z + 2 * x * w,
                     1 - 2 * x * x - 2 * y * y,
                     float(object.pose.position.z)};
-                for (int i = 0; i < 8; i++) {
+                for (int i = 0; i < 8; i++)
+                {
                     float x = RT[0] * p[i].x + RT[1] * p[i].y + RT[2] * p[i].z + RT[3];
                     float y = RT[4] * p[i].x + RT[5] * p[i].y + RT[6] * p[i].z + RT[7];
                     float z = RT[8] * p[i].x + RT[9] * p[i].y + RT[10] * p[i].z + RT[11];
@@ -295,14 +307,17 @@ visualization_msgs::MarkerArray VisualizeDetectedObjects::ObjectsToBoxes(
                     p[i].z  = z;
                 }
             }
-            else {
-                for (size_t j = 0; j < 8; j++) {
+            else
+            {
+                for (size_t j = 0; j < 8; j++)
+                {
                     p[j].x += object.pose.position.x;
                     p[j].y += object.pose.position.y;
                     p[j].z += object.pose.position.z;
                 }
             }
-            for (size_t i = 0; i < 8; i++) {
+            for (size_t i = 0; i < 8; i++)
+            {
                 box.points.push_back(p[i]);
             }
             box.points.push_back(p[0]);
@@ -326,10 +341,12 @@ visualization_msgs::MarkerArray VisualizeDetectedObjects::ObjectsToModels(
 {
     visualization_msgs::MarkerArray object_models;
 
-    for (auto const& object : in_objects.objects) {
+    for (auto const& object : in_objects.objects)
+    {
         if (IsObjectValid(object) && object.label != "unknown" &&
             (object.dimensions.x + object.dimensions.y + object.dimensions.z) <
-                object_max_linear_size_) {
+                object_max_linear_size_)
+        {
             visualization_msgs::Marker model;
 
             model.lifetime                    = ros::Duration(marker_display_duration_);
@@ -339,22 +356,28 @@ visualization_msgs::MarkerArray VisualizeDetectedObjects::ObjectsToModels(
             model.ns                          = ros_namespace_ + "model_markers";
             model.mesh_use_embedded_materials = false;
             model.color                       = model_color_;
-            if (object.label == "car") {
+            if (object.label == "car")
+            {
                 model.mesh_resource = "package://detected_objects_visualizer/models/car.dae";
             }
-            else if (object.label == "person") {
+            else if (object.label == "person")
+            {
                 model.mesh_resource = "package://detected_objects_visualizer/models/person.dae";
             }
-            else if (object.label == "bicycle" || object.label == "bike") {
+            else if (object.label == "bicycle" || object.label == "bike")
+            {
                 model.mesh_resource = "package://detected_objects_visualizer/models/bike.dae";
             }
-            else if (object.label == "bus") {
+            else if (object.label == "bus")
+            {
                 model.mesh_resource = "package://detected_objects_visualizer/models/bus.dae";
             }
-            else if (object.label == "truck") {
+            else if (object.label == "truck")
+            {
                 model.mesh_resource = "package://detected_objects_visualizer/models/truck.dae";
             }
-            else {
+            else
+            {
                 model.mesh_resource = "package://detected_objects_visualizer/models/box.dae";
             }
             model.scale.x       = 1;
@@ -377,9 +400,11 @@ visualization_msgs::MarkerArray VisualizeDetectedObjects::ObjectsToHulls(
 {
     visualization_msgs::MarkerArray polygon_hulls;
 
-    for (auto const& object : in_objects.objects) {
+    for (auto const& object : in_objects.objects)
+    {
         if (IsObjectValid(object) && !object.convex_hull.polygon.points.empty() &&
-            object.label == "unknown") {
+            object.label == "unknown")
+        {
             visualization_msgs::Marker hull;
             hull.lifetime = ros::Duration(marker_display_duration_);
             hull.header   = in_objects.header;
@@ -389,7 +414,8 @@ visualization_msgs::MarkerArray VisualizeDetectedObjects::ObjectsToHulls(
             hull.id       = marker_id_++;
             hull.scale.x  = 0.15;
 
-            for (auto const& point : object.convex_hull.polygon.points) {
+            for (auto const& point : object.convex_hull.polygon.points)
+            {
                 geometry_msgs::Point tmp_point;
                 tmp_point.x = point.x;
                 tmp_point.y = point.y;
@@ -397,10 +423,12 @@ visualization_msgs::MarkerArray VisualizeDetectedObjects::ObjectsToHulls(
                 hull.points.push_back(tmp_point);
             }
 
-            if (object.color.a == 0) {
+            if (object.color.a == 0)
+            {
                 hull.color = hull_color_;
             }
-            else {
+            else
+            {
                 hull.color = object.color;
             }
 
@@ -414,12 +442,15 @@ visualization_msgs::MarkerArray VisualizeDetectedObjects::ObjectsToArrows(
     const autoware_msgs::DetectedObjectArray& in_objects)
 {
     visualization_msgs::MarkerArray arrow_markers;
-    for (auto const& object : in_objects.objects) {
-        if (IsObjectValid(object) && object.pose_reliable) {
+    for (auto const& object : in_objects.objects)
+    {
+        if (IsObjectValid(object) && object.pose_reliable)
+        {
             // std::cout << " 333333" << std::endl;
             double velocity = object.velocity.linear.x;
 
-            if (abs(velocity) >= arrow_speed_threshold_) {
+            if (abs(velocity) >= arrow_speed_threshold_)
+            {
                 visualization_msgs::Marker arrow_marker;
                 arrow_marker.lifetime = ros::Duration(marker_display_duration_);
 
@@ -432,7 +463,8 @@ visualization_msgs::MarkerArray VisualizeDetectedObjects::ObjectsToArrows(
                 tf::Matrix3x3(q).getRPY(roll, pitch, yaw);
 
                 // in the case motion model fit opposite direction
-                if (velocity < -0.1) {
+                if (velocity < -0.1)
+                {
                     yaw += M_PI;
                     // normalize angle
                     while (yaw > M_PI) yaw -= 2. * M_PI;
@@ -451,10 +483,12 @@ visualization_msgs::MarkerArray VisualizeDetectedObjects::ObjectsToArrows(
                 arrow_marker.type   = visualization_msgs::Marker::ARROW;
 
                 // green
-                if (object.color.a == 0) {
+                if (object.color.a == 0)
+                {
                     arrow_marker.color = arrow_color_;
                 }
-                else {
+                else
+                {
                     arrow_marker.color = object.color;
                 }
                 arrow_marker.id = marker_id_++;
@@ -486,8 +520,10 @@ visualization_msgs::MarkerArray VisualizeDetectedObjects::ObjectsToLabels(
     const autoware_msgs::DetectedObjectArray& in_objects)
 {
     visualization_msgs::MarkerArray label_markers;
-    for (auto const& object : in_objects.objects) {
-        if (IsObjectValid(object)) {
+    for (auto const& object : in_objects.objects)
+    {
+        if (IsObjectValid(object))
+        {
             visualization_msgs::Marker label_marker;
 
             label_marker.lifetime = ros::Duration(marker_display_duration_);
@@ -513,13 +549,16 @@ visualization_msgs::MarkerArray VisualizeDetectedObjects::ObjectsToLabels(
             std::string distance_str = distance_stream.str() + " m";
             label_marker.text += distance_str;
 
-            if (object.velocity_reliable) {
+            if (object.velocity_reliable)
+            {
                 double velocity = object.velocity.linear.x;
-                if (velocity < -0.1) {
+                if (velocity < -0.1)
+                {
                     velocity *= -1;
                 }
 
-                if (abs(velocity) < object_speed_threshold_) {
+                if (abs(velocity) < object_speed_threshold_)
+                {
                     velocity = 0.0;
                 }
 
@@ -558,7 +597,8 @@ bool VisualizeDetectedObjects::IsObjectValid(const autoware_msgs::DetectedObject
         std::isnan(in_object.pose.position.y) || std::isnan(in_object.pose.position.z) ||
         (in_object.pose.position.x == 0.) || (in_object.pose.position.y == 0.) ||
         (in_object.dimensions.x <= 0.) || (in_object.dimensions.y <= 0.) ||
-        (in_object.dimensions.z <= 0.)) {
+        (in_object.dimensions.z <= 0.))
+    {
         return false;
     }
     return true;

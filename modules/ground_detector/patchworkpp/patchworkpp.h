@@ -23,7 +23,8 @@ struct PointXYZ
         , y(_y)
         , z(_z)
         , idx(_idx)
-    {}
+    {
+    }
 };
 
 struct RevertCandidate
@@ -43,7 +44,8 @@ struct RevertCandidate
         , line_variable(_line_var)
         , pc_mean(_pc_mean)
         , regionwise_ground(_ground)
-    {}
+    {
+    }
 };
 
 struct Params
@@ -136,8 +138,8 @@ public:
     typedef std::vector<vector<PointXYZ>> Ring;
     typedef std::vector<Ring>             Zone;
 
-    PatchWorkpp(Params _params)
-        : params_(_params)
+    PatchWorkpp(Params params)
+        : params_(params)
     {
 
         double min_range_z2_ = (7 * params_.min_range + params_.max_range) / 8.0;
@@ -154,13 +156,15 @@ public:
                          2 * M_PI / params_.num_sectors_each_zone.at(2),
                          2 * M_PI / params_.num_sectors_each_zone.at(3)};
 
-        for (int k = 0; k < params_.num_zones; k++) {
+        for (int k = 0; k < params_.num_zones; k++)
+        {
 
             Ring empty_ring;
             empty_ring.resize(params_.num_sectors_each_zone[k]);
 
             Zone z;
-            for (int i = 0; i < params_.num_rings_each_zone[k]; i++) {
+            for (int i = 0; i < params_.num_rings_each_zone[k]; i++)
+            {
                 z.push_back(empty_ring);
             }
 

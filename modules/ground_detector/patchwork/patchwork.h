@@ -35,6 +35,39 @@ typedef std::vector<Ring>                            Zone;
 
 class PatchWork
 {
+public:
+    PatchWork();
+    ~PatchWork();
+
+    void groundfilter(const pcl::PointCloud<pcl::PointXYZI>::Ptr& in_cloud,
+                      pcl::PointCloud<pcl::PointXYZI>::Ptr&       out_ground_points,
+                      pcl::PointCloud<pcl::PointXYZI>::Ptr& out_groundless_points, float threshold,
+                      float floor_max_angle);
+
+    void ransac_filter(pcl::PointCloud<pcl::PointXYZI>::Ptr& in_cloud,
+                       pcl::PointCloud<pcl::PointXYZI>::Ptr& out_ground,
+                       pcl::PointCloud<pcl::PointXYZI>::Ptr& out_unground, float threshold);
+
+    void outliersRemoval(const pcl::PointCloud<pcl::PointXYZI>::Ptr in_cloud,
+                         pcl::PointCloud<pcl::PointXYZI>::Ptr       out_cloud);
+
+    void estimate_ground(const pcl::PointCloud<pcl::PointXYZI>::Ptr& cloudIn,
+                         pcl::PointCloud<pcl::PointXYZI>::Ptr&       ground_cloud,
+                         pcl::PointCloud<pcl::PointXYZI>::Ptr&       nonground_cloud);
+
+private:
+    void extract_initial_seeds_(const int zone_idx, const pcl::PointCloud<pcl::PointXYZI>& p_sorted,
+                                pcl::PointCloud<pcl::PointXYZI>& init_seeds);
+    void estimate_plane_(const pcl::PointCloud<pcl::PointXYZI>& ground);
+    void estimate_plane_(const int zone_idx, const pcl::PointCloud<pcl::PointXYZI>& ground);
+    double xy2theta(const double& x, const double& y);
+    void   initialize_zone(Zone& z, int num_sectors, int num_rings);
+    void   flush_patches_in_zone(Zone& patches, int num_sectors, int num_rings);
+    void   pc2czm(const pcl::PointCloud<pcl::PointXYZI>& src, std::vector<Zone>& czm);
+    void   extract_piecewiseground(const int zone_idx, const pcl::PointCloud<pcl::PointXYZI>& src,
+                                   pcl::PointCloud<pcl::PointXYZI>& dst,
+                                   pcl::PointCloud<pcl::PointXYZI>& non_groud_dst);
+
 private:
     bool        _downsample_cloud;
     bool        _remove_ground;
@@ -92,44 +125,5 @@ private:
 
     pcl::PointCloud<pcl::PointXYZI> regionwise_ground_;
     pcl::PointCloud<pcl::PointXYZI> regionwise_nonground_;
-
-    void extract_initial_seeds_(const int zone_idx, const pcl::PointCloud<pcl::PointXYZI>& p_sorted,
-                                pcl::PointCloud<pcl::PointXYZI>& init_seeds);
-    void estimate_plane_(const pcl::PointCloud<pcl::PointXYZI>& ground);
-    void estimate_plane_(const int zone_idx, const pcl::PointCloud<pcl::PointXYZI>& ground);
-    double xy2theta(const double& x, const double& y);
-    void   initialize_zone(Zone& z, int num_sectors, int num_rings);
-    void   flush_patches_in_zone(Zone& patches, int num_sectors, int num_rings);
-    void   pc2czm(const pcl::PointCloud<pcl::PointXYZI>& src, std::vector<Zone>& czm);
-    void   extract_piecewiseground(const int zone_idx, const pcl::PointCloud<pcl::PointXYZI>& src,
-                                   pcl::PointCloud<pcl::PointXYZI>& dst,
-                                   pcl::PointCloud<pcl::PointXYZI>& non_groud_dst);
-
-
-public:
-    PatchWork();
-    ~PatchWork();
-    void downsample(const pcl::PointCloud<pcl::PointXYZI>::Ptr& in_cloud,
-                    pcl::PointCloud<pcl::PointXYZI>::Ptr& out_cloud, float leafsize_x,
-                    float leafsize_y, float leafsize_z);
-
-    void clip_cloud_roi(const pcl::PointCloud<pcl::PointXYZI>::Ptr in_cloud,
-                        pcl::PointCloud<pcl::PointXYZI>::Ptr out_cloud, const float clip_x_min,
-                        const float clip_x_max, const float clip_y_min, const float clip_y_max,
-                        const float clip_z_min, const float clip_z_max, const double in_dist = 3);
-    void groundfilter(const pcl::PointCloud<pcl::PointXYZI>::Ptr& in_cloud,
-                      pcl::PointCloud<pcl::PointXYZI>::Ptr&       out_ground_points,
-                      pcl::PointCloud<pcl::PointXYZI>::Ptr& out_groundless_points, float threshold,
-                      float floor_max_angle);
-
-
-    void ransac_filter(pcl::PointCloud<pcl::PointXYZI>::Ptr& in_cloud,
-                       pcl::PointCloud<pcl::PointXYZI>::Ptr& out_ground,
-                       pcl::PointCloud<pcl::PointXYZI>::Ptr& out_unground, float threshold);
-    void outliersRemoval(const pcl::PointCloud<pcl::PointXYZI>::Ptr in_cloud,
-                         pcl::PointCloud<pcl::PointXYZI>::Ptr       out_cloud);
-    void estimate_ground(const pcl::PointCloud<pcl::PointXYZI>::Ptr& cloudIn,
-                         pcl::PointCloud<pcl::PointXYZI>::Ptr&       ground_cloud,
-                         pcl::PointCloud<pcl::PointXYZI>::Ptr&       nonground_cloud);
 };
 #endif
