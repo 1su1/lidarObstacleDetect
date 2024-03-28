@@ -5,7 +5,7 @@ LidarObstacleDetection::LidarObstacleDetection(ros::NodeHandle nh, ros::NodeHand
     , voxel_grid_filter_(nh, pnh)
     , cluster_(nh, pnh)
     , bounding_box_(pnh)
-    , patch_work_(Params())
+    , patch_work_(&pnh)
 {
     ros::Subscriber sub =
         nh.subscribe("/os1_cloud_node/points", 1, &LidarObstacleDetection::ClusterCallback, this);
@@ -46,7 +46,8 @@ void LidarObstacleDetection::ClusterCallback(
     voxel_grid_filter_.Downsample(clip_cloud_ptr, downsampled_cloud_ptr);
 
     // 地面分割
-    patch_work_.estimateGround(downsampled_cloud_ptr, ground_cloud_ptr, noground_cloud_ptr);
+    double time_taken;
+    patch_work_.estimate_ground(*downsampled_cloud_ptr, *ground_cloud_ptr, *noground_cloud_ptr, time_taken);
     int64_t tm2 = GetTime();
     ROS_INFO("remove ground cost time:%ld ms", (tm2 - tm1) / 1000);
 

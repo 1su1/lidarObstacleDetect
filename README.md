@@ -10,6 +10,7 @@ sudo apt-get install ros-noetic-visualization-msgs
 2.启动
 ```
 ROS_NAMESPACE=/pylon_camera_node rosrun image_proc image_proc
+rosbag play example_filtered.bag -l
 roslaunch lidar_obstacle_detection lidar_obstacle_detection.launch
 ```
 launch有两个节点，运行launch直接会打开rviz可视化

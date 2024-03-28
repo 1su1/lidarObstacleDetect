@@ -25,7 +25,7 @@
 
 #include "bounding_box/bounding_box.h"
 #include "euclidean_cluster/euclidean_cluster.h"
-#include "ground_detector/patchworkpp/patchworkpp.h"
+#include "ground_detector/patchworkpp/patchworkpp.hpp"
 #include "pre_process/roi_clip/roi_clip.h"
 #include "pre_process/voxel_grid_filter/voxel_grid_filter.h"
 #include "visualization/visualize_detected_objects.h"
@@ -46,12 +46,12 @@ private:
                          const pcl::PointCloud<pcl::PointXYZI>::Ptr in_cloud_to_publish_ptr);
 
 private:
-    RoiClip                  roi_clip_;
-    VoxelGridFilter          voxel_grid_filter_;
-    PatchWorkpp              patch_work_;
-    EuclideanCluster         cluster_;
-    BoundingBox              bounding_box_;
-    VisualizeDetectedObjects vdo_;
+    RoiClip                     roi_clip_;
+    VoxelGridFilter             voxel_grid_filter_;
+    PatchWorkpp<pcl::PointXYZI> patch_work_;
+    EuclideanCluster            cluster_;
+    BoundingBox                 bounding_box_;
+    VisualizeDetectedObjects    vdo_;
 
     ros::Publisher pub_clip_cloud_;
     ros::Publisher pub_ground_cloud_;
