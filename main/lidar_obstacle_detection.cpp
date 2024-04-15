@@ -12,6 +12,7 @@ LidarObstacleDetection::LidarObstacleDetection(ros::NodeHandle nh, ros::NodeHand
 
     pub_clip_cloud_       = nh.advertise<sensor_msgs::PointCloud2>("/points_clip", 1);
     pub_noground_cloud_   = nh.advertise<sensor_msgs::PointCloud2>("/noground_points", 1);
+    pub_ground_cloud_     = nh.advertise<sensor_msgs::PointCloud2>("/ground_points", 1);
     pub_cluster_cloud_    = nh.advertise<sensor_msgs::PointCloud2>("/points_cluster", 1);
     pub_clusters_message_ = nh.advertise<autoware_msgs::CloudClusterArray>(
         "/detection/lidar_detector/cloud_clusters", 1);
@@ -47,7 +48,8 @@ void LidarObstacleDetection::ClusterCallback(
 
     // 地面分割
     double time_taken;
-    patch_work_.estimate_ground(*downsampled_cloud_ptr, *ground_cloud_ptr, *noground_cloud_ptr, time_taken);
+    patch_work_.estimate_ground(
+        *downsampled_cloud_ptr, *ground_cloud_ptr, *noground_cloud_ptr, time_taken);
     int64_t tm2 = GetTime();
     ROS_INFO("remove ground cost time:%ld ms", (tm2 - tm1) / 1000);
 
@@ -74,6 +76,7 @@ void LidarObstacleDetection::ClusterCallback(
     PublishCloud(&pub_clip_cloud_, in_sensor_cloud->header, clip_cloud_ptr);
     PublishCloud(&pub_noground_cloud_, in_sensor_cloud->header, noground_cloud_ptr);
     PublishCloud(&pub_cluster_cloud_, in_sensor_cloud->header, outCloudPtr);
+    PublishCloud(&pub_ground_cloud_, in_sensor_cloud->header, ground_cloud_ptr);
 
     euclidean_time_ += tm3 - tm2;
     total_time_ += tm3 - tm0;

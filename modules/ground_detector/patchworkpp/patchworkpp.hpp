@@ -81,7 +81,8 @@ public:
         node_handle_.param("/max_r", max_range_, 80.0);
         node_handle_.param("/min_r", min_range_, 2.7);
         node_handle_.param("/uprightness_thr", uprightness_thr_, 0.5);
-        node_handle_.param("/adaptive_seed_selection_margin", adaptive_seed_selection_margin_, -1.1);
+        node_handle_.param(
+            "/adaptive_seed_selection_margin", adaptive_seed_selection_margin_, -1.1);
         node_handle_.param("/RNR_ver_angle_thr", RNR_ver_angle_thr_, -15.0);
         node_handle_.param("/RNR_intensity_thr", RNR_intensity_thr_, 0.2);
         node_handle_.param("/max_flatness_storage", max_flatness_storage_, 1000);
@@ -881,7 +882,7 @@ inline void PatchWorkpp<PointT>::temporal_ground_revert(
         double prob_line = 1.0;
         if (candidate.line_variable >
             8.0)   //&& candidate.line_dir > M_PI/4)// candidate.ground_elevation >
-                   //elevation_thr_[concentric_idx])
+                   // elevation_thr_[concentric_idx])
         {
             // if (verbose_) cout << "line_dir: " << candidate.line_dir << endl;
             prob_line = 0.0;
