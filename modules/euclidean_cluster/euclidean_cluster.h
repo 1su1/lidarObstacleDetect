@@ -28,9 +28,8 @@ public:
                            pcl::PointCloud<pcl::PointXYZI>::Ptr&              out_cloud_ptr,
                            std::vector<pcl::PointCloud<pcl::PointXYZI>::Ptr>& points_vector);
 
-    void clusterIndicesMultiThread(const pcl::PointCloud<pcl::PointXYZI>::Ptr in_cloud_ptr,
-                                   double in_max_cluster_distance,
-                                   std::promise<std::vector<pcl::PointIndices>>& promiseObj);
+    std::vector<pcl::PointIndices> clusterIndicesMultiThread(
+        const pcl::PointCloud<pcl::PointXYZI>::Ptr in_cloud_ptr, double in_max_cluster_distance);
 
 private:
     double              cluster_tolerance_;
@@ -40,7 +39,7 @@ private:
     std::vector<double> clustering_ranges_;
     bool                use_multiple_thres_;
 
-    std::mutex mutex_;   //先定义互斥锁
+    std::mutex mutex_;   // 先定义互斥锁
 };
 
 #endif

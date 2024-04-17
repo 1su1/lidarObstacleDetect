@@ -21,6 +21,10 @@ leaf_size: 0.1
 # remove ground
 save_flag: true
 
+# lidar to camera
+lidar_to_camera_q: [-0.50507811, 0.51206185, 0.49024953, -0.49228464] 
+lidar_to_camera_t: [-0.13165462, 0.03870398, -0.17253834]
+
 # patchworkpp:
 
 sensor_height: 1.0

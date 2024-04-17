@@ -7,8 +7,16 @@ LidarObstacleDetection::LidarObstacleDetection(ros::NodeHandle nh, ros::NodeHand
     , bounding_box_(pnh)
     , patch_work_(&pnh)
 {
-    ros::Subscriber sub =
-        nh.subscribe("/os1_cloud_node/points", 1, &LidarObstacleDetection::ClusterCallback, this);
+    message_filters::Subscriber<sensor_msgs::Image> image_sub(
+        nh, "/pylon_camera_node/image_color", 1);   // topic1 输入
+    message_filters::Subscriber<sensor_msgs::PointCloud2> lidar_sub(
+        nh, "/os1_cloud_node/points", 1);   // topic2 输入
+
+    typedef message_filters::sync_policies::ApproximateTime<sensor_msgs::Image,
+                                                            sensor_msgs::PointCloud2>
+                                               approx_sync;
+    message_filters::Synchronizer<approx_sync> sync(approx_sync(5), image_sub, lidar_sub);
+    sync.registerCallback(boost::bind(&LidarObstacleDetection::ClusterCallback, this, _1, _2));
 
     pub_clip_cloud_       = nh.advertise<sensor_msgs::PointCloud2>("/points_clip", 1);
     pub_noground_cloud_   = nh.advertise<sensor_msgs::PointCloud2>("/noground_points", 1);
@@ -20,10 +28,15 @@ LidarObstacleDetection::LidarObstacleDetection(ros::NodeHandle nh, ros::NodeHand
         nh.advertise<autoware_msgs::DetectedObjectArray>("/detection/lidar_detector/objects", 1);
     pub_cluster_visualize_markers_ =
         nh.advertise<visualization_msgs::MarkerArray>("/visualize/cluster_markers", 1);
+
+    // test
+    pub_image_test_ = nh.advertise<sensor_msgs::Image>("/image_test", 1);
+    pub_lidar_test_ = nh.advertise<sensor_msgs::PointCloud2>("/lidar_test", 1);
     ros::spin();
 }
 
 void LidarObstacleDetection::ClusterCallback(
+    const sensor_msgs::ImageConstPtr&       image,
     const sensor_msgs::PointCloud2ConstPtr& in_sensor_cloud)
 {
     std_msgs::Header                     header = in_sensor_cloud->header;

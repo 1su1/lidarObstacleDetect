@@ -20,15 +20,21 @@
 #include <pcl_conversions/pcl_conversions.h>
 #include <pcl_ros/point_cloud.h>
 #include <ros/ros.h>
+#include <sensor_msgs/Image.h>
 #include <visualization_msgs/Marker.h>
 #include <visualization_msgs/MarkerArray.h>
 
 #include "bounding_box/bounding_box.h"
 #include "euclidean_cluster/euclidean_cluster.h"
+// #include "ground_detector/newpatchwork/new_patchwork.hpp"
 #include "ground_detector/patchworkpp/patchworkpp.hpp"
 #include "pre_process/roi_clip/roi_clip.h"
 #include "pre_process/voxel_grid_filter/voxel_grid_filter.h"
 #include "visualization/visualize_detected_objects.h"
+#include <message_filters/subscriber.h>
+#include <message_filters/time_synchronizer.h>
+#include <message_filters/sync_policies/approximate_time.h>
+#include <message_filters/sync_policies/exact_time.h>
 
 class LidarObstacleDetection
 {
@@ -38,7 +44,8 @@ public:
     ~LidarObstacleDetection(){};
 
 private:
-    void    ClusterCallback(const sensor_msgs::PointCloud2ConstPtr& in_sensor_cloud);
+    void    ClusterCallback(const sensor_msgs::ImageConstPtr&       image,
+                            const sensor_msgs::PointCloud2ConstPtr& in_sensor_cloud);
     void    PublishDetectedObjects(const autoware_msgs::CloudClusterArray& in_clusters,
                                    autoware_msgs::DetectedObjectArray&     detected_objects);
     int64_t GetTime();
@@ -49,9 +56,11 @@ private:
     RoiClip                     roi_clip_;
     VoxelGridFilter             voxel_grid_filter_;
     PatchWorkpp<pcl::PointXYZI> patch_work_;
-    EuclideanCluster            cluster_;
-    BoundingBox                 bounding_box_;
-    VisualizeDetectedObjects    vdo_;
+    // NewPatchWork<pcl::PointXYZRGBA> new_patch_work_;
+
+    EuclideanCluster         cluster_;
+    BoundingBox              bounding_box_;
+    VisualizeDetectedObjects vdo_;
 
     ros::Publisher pub_clip_cloud_;
     ros::Publisher pub_ground_cloud_;
@@ -62,6 +71,9 @@ private:
     ros::Publisher pub_detected_3Dobjects_;
     ros::Publisher pub_cluster_visualize_markers_;
     ros::Publisher pub_3Dobjects_visualize_markers_;
+
+    ros::Publisher pub_image_test_;
+    ros::Publisher pub_lidar_test_;
 
     // 时间统计
     int64_t euclidean_time_;

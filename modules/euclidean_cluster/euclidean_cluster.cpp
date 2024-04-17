@@ -13,7 +13,7 @@ EuclideanCluster::EuclideanCluster(ros::NodeHandle nh, ros::NodeHandle pnh)
 void EuclideanCluster::cluster_vector(const pcl::PointCloud<pcl::PointXYZI>::Ptr in,
                                       std::vector<pcl::PointIndices>&            indices)
 {
-    //设置查找方式－kdtree
+    // 设置查找方式－kdtree
     pcl::search::Search<pcl::PointXYZI>::Ptr tree =
         boost::shared_ptr<pcl::search::Search<pcl::PointXYZI>>(
             new pcl::search::KdTree<pcl::PointXYZI>);
@@ -86,44 +86,33 @@ void EuclideanCluster::segmentByDistance(
             }
         }
 
-        std::vector<std::thread> thread_vec(cloud_segments_array.size());
+        std::vector<std::future<std::vector<pcl::PointIndices>>> futures;
         for (unsigned int i = 0; i < cloud_segments_array.size(); i++)
         {
-            // 这种获取多线程返回值写法，运行速度慢，大家有兴趣自行更改，我懒改了，这是粗版demo
-            std::promise<std::vector<pcl::PointIndices>>       promiseObj;
-            std::shared_future<std::vector<pcl::PointIndices>> futureObj = promiseObj.get_future();
-            thread_vec[i]   = std::thread(&EuclideanCluster::clusterIndicesMultiThread,
-                                        this,
-                                        cloud_segments_array[i],
-                                        std::ref(clustering_distances_[i]),
-                                        std::ref(promiseObj));
-            cluster_indices = futureObj.get();
+            futures.push_back(std::async(std::launch::async,
+                                         &EuclideanCluster::clusterIndicesMultiThread,
+                                         this,
+                                         cloud_segments_array[i],
+                                         clustering_distances_[i]));
+        }
+        for (unsigned int i = 0; i < futures.size(); i++)
+        {
+            std::vector<pcl::PointIndices> cluster_indices = futures[i].get();
             for (int j = 0; j < cluster_indices.size(); j++)
             {
                 pcl::PointCloud<pcl::PointXYZI>::Ptr temp_cloud_ptr(
                     new pcl::PointCloud<pcl::PointXYZI>);
-                pcl::copyPointCloud(*cloud_segments_array[i], cluster_indices[j], *temp_cloud_ptr);
+                pcl::copyPointCloud(*cloud_segments_array[j], cluster_indices[j], *temp_cloud_ptr);
                 *out_cloud_ptr += *temp_cloud_ptr;
                 points_vector.push_back(temp_cloud_ptr);
             }
         }
-
-        for (int i = 0; i < thread_vec.size(); i++)
-        {
-            thread_vec[i].join();
-        }
     }
 }
 
-void EuclideanCluster::clusterIndicesMultiThread(
-    const pcl::PointCloud<pcl::PointXYZI>::Ptr in_cloud_ptr, double in_max_cluster_distance,
-    std::promise<std::vector<pcl::PointIndices>>& promiseObj)
+std::vector<pcl::PointIndices> EuclideanCluster::clusterIndicesMultiThread(
+    const pcl::PointCloud<pcl::PointXYZI>::Ptr in_cloud_ptr, double in_max_cluster_distance)
 {
-    // make it flat
-    // for (size_t i = 0; i < cloud_2d->points.size(); i++)
-    // {
-    //     cloud_2d->points[i].z = 0;
-    // }
     pcl::search::Search<pcl::PointXYZI>::Ptr tree =
         boost::shared_ptr<pcl::search::Search<pcl::PointXYZI>>(
             new pcl::search::KdTree<pcl::PointXYZI>);
@@ -136,5 +125,5 @@ void EuclideanCluster::clusterIndicesMultiThread(
     ec.setInputCloud(in_cloud_ptr);
     ec.extract(indices);
 
-    promiseObj.set_value(indices);
+    return indices;
 }

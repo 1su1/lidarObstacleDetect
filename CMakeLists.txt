@@ -2,11 +2,12 @@ cmake_minimum_required(VERSION 2.8.3)
 project(lidar_obstacle_detection)
 
 SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
-SET(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall -g -lpthread")
+SET(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall -lpthread")
 
 find_package(catkin REQUIRED COMPONENTS
   autoware_msgs
   geometry_msgs
+  message_filters
   jsk_rviz_plugins
   pcl_ros
   roscpp
