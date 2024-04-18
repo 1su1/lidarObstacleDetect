@@ -1,0 +1,1451 @@
+[0m[ INFO] [1713335869.312095172]: Inititalizing PatchWork++...[0m
+[0m[ INFO] [1713335869.322644162]: Sensor Height: 1.000000[0m
+[0m[ INFO] [1713335869.322654676]: Num of Iteration: 3[0m
+[0m[ INFO] [1713335869.322660185]: Num of LPR: 20[0m
+[0m[ INFO] [1713335869.322665004]: Num of min. points: 10[0m
+[0m[ INFO] [1713335869.322670318]: Seeds Threshold: 0.300000[0m
+[0m[ INFO] [1713335869.322675237]: Distance Threshold: 0.125000[0m
+[0m[ INFO] [1713335869.322683936]: Max. range:: 80.000000[0m
+[0m[ INFO] [1713335869.322688651]: Min. range:: 2.700000[0m
+[0m[ INFO] [1713335869.322693325]: Normal vector threshold: 0.707000[0m
+[0m[ INFO] [1713335869.322700267]: adaptive_seed_selection_margin: -1.200000[0m
+[0m[ INFO] [1713335869.324024164]: Num. zones: 4[0m
+Num. sectors: 16, 32, 54, 32
+Num. rings: 2, 4, 4, 4
+elevation_thr_: 0.0000, 0.0000, 0.0000, 0.0000 
+flatness_thr_: 0.0000, 0.0000, 0.0000, 0.0000 
+INITIALIZATION COMPLETE
+[0m[ INFO] [1713335877.922454449]: GetROI sucess[0m
+clip_cloud_ptr 63023
+[0m[ INFO] [1713335877.923129503]: ROI_Clip cost time:16 ms[0m
+[0m[ INFO] [1713335878.007165026]: remove ground cost time:84 ms[0m
+[0m[ INFO] [1713335878.042855503]: euclidean cluster cost time:35 ms[0m
+[0m[ INFO] [1713335878.042874476]: total cost time:136 ms[0m
+[0m[ INFO] [1713335878.105855889]: GetROI sucess[0m
+clip_cloud_ptr 62959
+[0m[ INFO] [1713335878.106398241]: ROI_Clip cost time:11 ms[0m
+[0m[ INFO] [1713335878.184409453]: remove ground cost time:77 ms[0m
+[0m[ INFO] [1713335878.213192009]: euclidean cluster cost time:28 ms[0m
+[0m[ INFO] [1713335878.213215893]: total cost time:117 ms[0m
+[0m[ INFO] [1713335878.268845172]: GetROI sucess[0m
+clip_cloud_ptr 62848
+[0m[ INFO] [1713335878.269491118]: ROI_Clip cost time:9 ms[0m
+[0m[ INFO] [1713335878.348753522]: remove ground cost time:79 ms[0m
+[0m[ INFO] [1713335878.377629093]: euclidean cluster cost time:28 ms[0m
+[0m[ INFO] [1713335878.377646059]: total cost time:117 ms[0m
+[0m[ INFO] [1713335878.435542093]: GetROI sucess[0m
+clip_cloud_ptr 62714
+[0m[ INFO] [1713335878.436073229]: ROI_Clip cost time:9 ms[0m
+[0m[ INFO] [1713335878.515483928]: remove ground cost time:79 ms[0m
+[0m[ INFO] [1713335878.544914052]: euclidean cluster cost time:29 ms[0m
+[0m[ INFO] [1713335878.544940666]: total cost time:118 ms[0m
+[0m[ INFO] [1713335878.601923214]: GetROI sucess[0m
+clip_cloud_ptr 62638
+[0m[ INFO] [1713335878.602452899]: ROI_Clip cost time:10 ms[0m
+[0m[ INFO] [1713335878.685335606]: remove ground cost time:82 ms[0m
+[0m[ INFO] [1713335878.717450742]: euclidean cluster cost time:32 ms[0m
+[0m[ INFO] [1713335878.717472173]: total cost time:125 ms[0m
+[0m[ INFO] [1713335878.776219970]: GetROI sucess[0m
+clip_cloud_ptr 62622
+[0m[ INFO] [1713335878.776975226]: ROI_Clip cost time:10 ms[0m
+[0m[ INFO] [1713335878.858929941]: remove ground cost time:81 ms[0m
+[0m[ INFO] [1713335878.888944507]: euclidean cluster cost time:30 ms[0m
+[0m[ INFO] [1713335878.888969743]: total cost time:122 ms[0m
+[0m[ INFO] [1713335878.950233151]: GetROI sucess[0m
+clip_cloud_ptr 63639
+[0m[ INFO] [1713335878.950774554]: ROI_Clip cost time:9 ms[0m
+[0m[ INFO] [1713335879.032115209]: remove ground cost time:81 ms[0m
+[0m[ INFO] [1713335879.067369670]: euclidean cluster cost time:35 ms[0m
+[0m[ INFO] [1713335879.067388007]: total cost time:126 ms[0m
+[0m[ INFO] [1713335879.128744568]: GetROI sucess[0m
+clip_cloud_ptr 64324
+[0m[ INFO] [1713335879.129331505]: ROI_Clip cost time:11 ms[0m
+[0m[ INFO] [1713335879.212528380]: remove ground cost time:83 ms[0m
+[0m[ INFO] [1713335879.243614178]: euclidean cluster cost time:31 ms[0m
+[0m[ INFO] [1713335879.243633012]: total cost time:125 ms[0m
+[0m[ INFO] [1713335879.303824452]: GetROI sucess[0m
+clip_cloud_ptr 64753
+[0m[ INFO] [1713335879.304460607]: ROI_Clip cost time:11 ms[0m
+[0m[ INFO] [1713335879.386320870]: remove ground cost time:81 ms[0m
+[0m[ INFO] [1713335879.416128427]: euclidean cluster cost time:29 ms[0m
+[0m[ INFO] [1713335879.416150661]: total cost time:123 ms[0m
+[0m[ INFO] [1713335879.477626606]: GetROI sucess[0m
+clip_cloud_ptr 65318
+[0m[ INFO] [1713335879.478289352]: ROI_Clip cost time:11 ms[0m
+[0m[ INFO] [1713335879.559476790]: remove ground cost time:81 ms[0m
+[0m[ INFO] [1713335879.588861881]: euclidean cluster cost time:29 ms[0m
+[0m[ INFO] [1713335879.588883231]: total cost time:122 ms[0m
+[0m[ INFO] [1713335879.655269717]: GetROI sucess[0m
+clip_cloud_ptr 65540
+[0m[ INFO] [1713335879.655812401]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335879.737690505]: remove ground cost time:81 ms[0m
+[0m[ INFO] [1713335879.767620314]: euclidean cluster cost time:29 ms[0m
+[0m[ INFO] [1713335879.767642278]: total cost time:127 ms[0m
+[0m[ INFO] [1713335879.828186722]: GetROI sucess[0m
+clip_cloud_ptr 65633
+[0m[ INFO] [1713335879.828855260]: ROI_Clip cost time:13 ms[0m
+[0m[ INFO] [1713335879.913740350]: remove ground cost time:84 ms[0m
+[0m[ INFO] [1713335879.943645927]: euclidean cluster cost time:29 ms[0m
+[0m[ INFO] [1713335879.943667727]: total cost time:128 ms[0m
+[0m[ INFO] [1713335880.004814920]: GetROI sucess[0m
+clip_cloud_ptr 65761
+[0m[ INFO] [1713335880.005474069]: ROI_Clip cost time:13 ms[0m
+[0m[ INFO] [1713335880.095834723]: remove ground cost time:90 ms[0m
+[0m[ INFO] [1713335880.126324730]: euclidean cluster cost time:30 ms[0m
+[0m[ INFO] [1713335880.126347248]: total cost time:134 ms[0m
+[0m[ INFO] [1713335880.186315743]: GetROI sucess[0m
+clip_cloud_ptr 65998
+[0m[ INFO] [1713335880.186885975]: ROI_Clip cost time:13 ms[0m
+[0m[ INFO] [1713335880.267113833]: remove ground cost time:80 ms[0m
+[0m[ INFO] [1713335880.296443845]: euclidean cluster cost time:29 ms[0m
+[0m[ INFO] [1713335880.296460977]: total cost time:122 ms[0m
+[0m[ INFO] [1713335880.360878013]: GetROI sucess[0m
+clip_cloud_ptr 66124
+[0m[ INFO] [1713335880.362347248]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335880.447429629]: remove ground cost time:85 ms[0m
+[0m[ INFO] [1713335880.477313710]: euclidean cluster cost time:29 ms[0m
+[0m[ INFO] [1713335880.477330614]: total cost time:130 ms[0m
+[0m[ INFO] [1713335880.544479699]: GetROI sucess[0m
+clip_cloud_ptr 66012
+[0m[ INFO] [1713335880.545182534]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335880.628335967]: remove ground cost time:83 ms[0m
+[0m[ INFO] [1713335880.658458637]: euclidean cluster cost time:30 ms[0m
+[0m[ INFO] [1713335880.658480087]: total cost time:128 ms[0m
+[0m[ INFO] [1713335880.719388382]: GetROI sucess[0m
+clip_cloud_ptr 65948
+[0m[ INFO] [1713335880.720013879]: ROI_Clip cost time:13 ms[0m
+[0m[ INFO] [1713335880.800752543]: remove ground cost time:80 ms[0m
+[0m[ INFO] [1713335880.830957699]: euclidean cluster cost time:30 ms[0m
+[0m[ INFO] [1713335880.830977171]: total cost time:124 ms[0m
+[0m[ INFO] [1713335880.892719204]: GetROI sucess[0m
+clip_cloud_ptr 66014
+[0m[ INFO] [1713335880.893326056]: ROI_Clip cost time:13 ms[0m
+[0m[ INFO] [1713335880.975684443]: remove ground cost time:82 ms[0m
+[0m[ INFO] [1713335881.005636219]: euclidean cluster cost time:29 ms[0m
+[0m[ INFO] [1713335881.005654908]: total cost time:125 ms[0m
+[0m[ INFO] [1713335881.073417937]: GetROI sucess[0m
+clip_cloud_ptr 66129
+[0m[ INFO] [1713335881.074363280]: ROI_Clip cost time:18 ms[0m
+[0m[ INFO] [1713335881.161198979]: remove ground cost time:86 ms[0m
+[0m[ INFO] [1713335881.191484055]: euclidean cluster cost time:30 ms[0m
+[0m[ INFO] [1713335881.191500849]: total cost time:135 ms[0m
+[0m[ INFO] [1713335881.257981433]: GetROI sucess[0m
+clip_cloud_ptr 66348
+[0m[ INFO] [1713335881.258536118]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335881.340596628]: remove ground cost time:82 ms[0m
+[0m[ INFO] [1713335881.369079428]: euclidean cluster cost time:28 ms[0m
+[0m[ INFO] [1713335881.369096661]: total cost time:125 ms[0m
+[0m[ INFO] [1713335881.431757345]: GetROI sucess[0m
+clip_cloud_ptr 66643
+[0m[ INFO] [1713335881.432341086]: ROI_Clip cost time:13 ms[0m
+[0m[ INFO] [1713335881.512053942]: remove ground cost time:79 ms[0m
+[0m[ INFO] [1713335881.540791774]: euclidean cluster cost time:28 ms[0m
+[0m[ INFO] [1713335881.540811001]: total cost time:122 ms[0m
+[0m[ INFO] [1713335881.599833171]: GetROI sucess[0m
+clip_cloud_ptr 66808
+[0m[ INFO] [1713335881.600398496]: ROI_Clip cost time:13 ms[0m
+[0m[ INFO] [1713335881.680122151]: remove ground cost time:79 ms[0m
+[0m[ INFO] [1713335881.709926764]: euclidean cluster cost time:29 ms[0m
+[0m[ INFO] [1713335881.709950650]: total cost time:122 ms[0m
+[0m[ INFO] [1713335881.772285815]: GetROI sucess[0m
+clip_cloud_ptr 66813
+[0m[ INFO] [1713335881.772861484]: ROI_Clip cost time:13 ms[0m
+[0m[ INFO] [1713335881.853177863]: remove ground cost time:80 ms[0m
+[0m[ INFO] [1713335881.882247774]: euclidean cluster cost time:29 ms[0m
+[0m[ INFO] [1713335881.882265008]: total cost time:122 ms[0m
+[0m[ INFO] [1713335881.944305543]: GetROI sucess[0m
+clip_cloud_ptr 66834
+[0m[ INFO] [1713335881.944879377]: ROI_Clip cost time:13 ms[0m
+[0m[ INFO] [1713335882.028060403]: remove ground cost time:83 ms[0m
+[0m[ INFO] [1713335882.057633380]: euclidean cluster cost time:29 ms[0m
+[0m[ INFO] [1713335882.057653990]: total cost time:125 ms[0m
+[0m[ INFO] [1713335882.121189746]: GetROI sucess[0m
+clip_cloud_ptr 66858
+[0m[ INFO] [1713335882.121748816]: ROI_Clip cost time:13 ms[0m
+[0m[ INFO] [1713335882.202463253]: remove ground cost time:80 ms[0m
+[0m[ INFO] [1713335882.231004721]: euclidean cluster cost time:28 ms[0m
+[0m[ INFO] [1713335882.231021939]: total cost time:122 ms[0m
+[0m[ INFO] [1713335882.293226251]: GetROI sucess[0m
+clip_cloud_ptr 66847
+[0m[ INFO] [1713335882.293785679]: ROI_Clip cost time:13 ms[0m
+[0m[ INFO] [1713335882.374025789]: remove ground cost time:80 ms[0m
+[0m[ INFO] [1713335882.403205783]: euclidean cluster cost time:29 ms[0m
+[0m[ INFO] [1713335882.403223402]: total cost time:122 ms[0m
+[0m[ INFO] [1713335882.463922830]: GetROI sucess[0m
+clip_cloud_ptr 66428
+[0m[ INFO] [1713335882.464478306]: ROI_Clip cost time:12 ms[0m
+[0m[ INFO] [1713335882.545672780]: remove ground cost time:81 ms[0m
+[0m[ INFO] [1713335882.575095483]: euclidean cluster cost time:29 ms[0m
+[0m[ INFO] [1713335882.575113954]: total cost time:123 ms[0m
+[0m[ INFO] [1713335882.638632708]: GetROI sucess[0m
+clip_cloud_ptr 66139
+[0m[ INFO] [1713335882.639186616]: ROI_Clip cost time:13 ms[0m
+[0m[ INFO] [1713335882.720526809]: remove ground cost time:81 ms[0m
+[0m[ INFO] [1713335882.750753757]: euclidean cluster cost time:30 ms[0m
+[0m[ INFO] [1713335882.750773230]: total cost time:125 ms[0m
+[0m[ INFO] [1713335882.811688931]: GetROI sucess[0m
+clip_cloud_ptr 66125
+[0m[ INFO] [1713335882.812301620]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335882.892301031]: remove ground cost time:79 ms[0m
+[0m[ INFO] [1713335882.922967326]: euclidean cluster cost time:30 ms[0m
+[0m[ INFO] [1713335882.922983223]: total cost time:124 ms[0m
+[0m[ INFO] [1713335882.984899839]: GetROI sucess[0m
+clip_cloud_ptr 66152
+[0m[ INFO] [1713335882.985500455]: ROI_Clip cost time:13 ms[0m
+[0m[ INFO] [1713335883.066403229]: remove ground cost time:80 ms[0m
+[0m[ INFO] [1713335883.097250844]: euclidean cluster cost time:30 ms[0m
+[0m[ INFO] [1713335883.097285161]: total cost time:124 ms[0m
+[0m[ INFO] [1713335883.160591260]: GetROI sucess[0m
+clip_cloud_ptr 66037
+[0m[ INFO] [1713335883.161195257]: ROI_Clip cost time:13 ms[0m
+[0m[ INFO] [1713335883.239303763]: remove ground cost time:78 ms[0m
+[0m[ INFO] [1713335883.268383673]: euclidean cluster cost time:29 ms[0m
+[0m[ INFO] [1713335883.268399408]: total cost time:120 ms[0m
+[0m[ INFO] [1713335883.332362903]: GetROI sucess[0m
+clip_cloud_ptr 66051
+[0m[ INFO] [1713335883.332915426]: ROI_Clip cost time:13 ms[0m
+[0m[ INFO] [1713335883.410476098]: remove ground cost time:77 ms[0m
+[0m[ INFO] [1713335883.439243475]: euclidean cluster cost time:28 ms[0m
+[0m[ INFO] [1713335883.439260630]: total cost time:119 ms[0m
+[0m[ INFO] [1713335883.498981722]: GetROI sucess[0m
+clip_cloud_ptr 66143
+[0m[ INFO] [1713335883.499543434]: ROI_Clip cost time:12 ms[0m
+[0m[ INFO] [1713335883.579656660]: remove ground cost time:80 ms[0m
+[0m[ INFO] [1713335883.609686963]: euclidean cluster cost time:30 ms[0m
+[0m[ INFO] [1713335883.609704025]: total cost time:123 ms[0m
+[0m[ INFO] [1713335883.670164166]: GetROI sucess[0m
+clip_cloud_ptr 66318
+[0m[ INFO] [1713335883.670725203]: ROI_Clip cost time:13 ms[0m
+[0m[ INFO] [1713335883.748971561]: remove ground cost time:78 ms[0m
+[0m[ INFO] [1713335883.777954179]: euclidean cluster cost time:28 ms[0m
+[0m[ INFO] [1713335883.777970162]: total cost time:120 ms[0m
+[0m[ INFO] [1713335883.839538362]: GetROI sucess[0m
+clip_cloud_ptr 66315
+[0m[ INFO] [1713335883.840094760]: ROI_Clip cost time:13 ms[0m
+[0m[ INFO] [1713335883.918015776]: remove ground cost time:77 ms[0m
+[0m[ INFO] [1713335883.946794080]: euclidean cluster cost time:28 ms[0m
+[0m[ INFO] [1713335883.946809998]: total cost time:119 ms[0m
+[0m[ INFO] [1713335884.006188350]: GetROI sucess[0m
+clip_cloud_ptr 66366
+[0m[ INFO] [1713335884.006745569]: ROI_Clip cost time:13 ms[0m
+[0m[ INFO] [1713335884.086743927]: remove ground cost time:79 ms[0m
+[0m[ INFO] [1713335884.119282308]: euclidean cluster cost time:32 ms[0m
+[0m[ INFO] [1713335884.119301133]: total cost time:125 ms[0m
+[0m[ INFO] [1713335884.177487933]: GetROI sucess[0m
+clip_cloud_ptr 66276
+[0m[ INFO] [1713335884.178051618]: ROI_Clip cost time:13 ms[0m
+[0m[ INFO] [1713335884.257554328]: remove ground cost time:79 ms[0m
+[0m[ INFO] [1713335884.286922087]: euclidean cluster cost time:29 ms[0m
+[0m[ INFO] [1713335884.286940588]: total cost time:122 ms[0m
+[0m[ INFO] [1713335884.348756901]: GetROI sucess[0m
+clip_cloud_ptr 65604
+[0m[ INFO] [1713335884.349483419]: ROI_Clip cost time:13 ms[0m
+[0m[ INFO] [1713335884.430831285]: remove ground cost time:81 ms[0m
+[0m[ INFO] [1713335884.461125719]: euclidean cluster cost time:30 ms[0m
+[0m[ INFO] [1713335884.461142744]: total cost time:125 ms[0m
+[0m[ INFO] [1713335884.523257211]: GetROI sucess[0m
+clip_cloud_ptr 65353
+[0m[ INFO] [1713335884.523808195]: ROI_Clip cost time:11 ms[0m
+[0m[ INFO] [1713335884.604574285]: remove ground cost time:80 ms[0m
+[0m[ INFO] [1713335884.634899210]: euclidean cluster cost time:30 ms[0m
+[0m[ INFO] [1713335884.634920867]: total cost time:122 ms[0m
+[0m[ INFO] [1713335884.694126621]: GetROI sucess[0m
+clip_cloud_ptr 65064
+[0m[ INFO] [1713335884.694748984]: ROI_Clip cost time:11 ms[0m
+[0m[ INFO] [1713335884.777658923]: remove ground cost time:82 ms[0m
+[0m[ INFO] [1713335884.807917383]: euclidean cluster cost time:30 ms[0m
+[0m[ INFO] [1713335884.807934394]: total cost time:124 ms[0m
+[0m[ INFO] [1713335884.867408214]: GetROI sucess[0m
+clip_cloud_ptr 64719
+[0m[ INFO] [1713335884.867974711]: ROI_Clip cost time:11 ms[0m
+[0m[ INFO] [1713335884.950377575]: remove ground cost time:82 ms[0m
+[0m[ INFO] [1713335884.981249451]: euclidean cluster cost time:30 ms[0m
+[0m[ INFO] [1713335884.981267607]: total cost time:124 ms[0m
+[0m[ INFO] [1713335885.042145610]: GetROI sucess[0m
+clip_cloud_ptr 64667
+[0m[ INFO] [1713335885.042704565]: ROI_Clip cost time:12 ms[0m
+[0m[ INFO] [1713335885.126971272]: remove ground cost time:84 ms[0m
+[0m[ INFO] [1713335885.159095099]: euclidean cluster cost time:32 ms[0m
+[0m[ INFO] [1713335885.159111938]: total cost time:128 ms[0m
+[0m[ INFO] [1713335885.222092579]: GetROI sucess[0m
+clip_cloud_ptr 64826
+[0m[ INFO] [1713335885.222642160]: ROI_Clip cost time:11 ms[0m
+[0m[ INFO] [1713335885.305936793]: remove ground cost time:83 ms[0m
+[0m[ INFO] [1713335885.335813808]: euclidean cluster cost time:29 ms[0m
+[0m[ INFO] [1713335885.335831907]: total cost time:124 ms[0m
+[0m[ INFO] [1713335885.395821220]: GetROI sucess[0m
+clip_cloud_ptr 65104
+[0m[ INFO] [1713335885.396380953]: ROI_Clip cost time:11 ms[0m
+[0m[ INFO] [1713335885.478020626]: remove ground cost time:81 ms[0m
+[0m[ INFO] [1713335885.507844794]: euclidean cluster cost time:29 ms[0m
+[0m[ INFO] [1713335885.507862463]: total cost time:122 ms[0m
+[0m[ INFO] [1713335885.567314475]: GetROI sucess[0m
+clip_cloud_ptr 65369
+[0m[ INFO] [1713335885.567865959]: ROI_Clip cost time:11 ms[0m
+[0m[ INFO] [1713335885.647656426]: remove ground cost time:79 ms[0m
+[0m[ INFO] [1713335885.677277292]: euclidean cluster cost time:29 ms[0m
+[0m[ INFO] [1713335885.677293635]: total cost time:120 ms[0m
+[0m[ INFO] [1713335885.741070975]: GetROI sucess[0m
+clip_cloud_ptr 65731
+[0m[ INFO] [1713335885.741629632]: ROI_Clip cost time:13 ms[0m
+[0m[ INFO] [1713335885.822319575]: remove ground cost time:80 ms[0m
+[0m[ INFO] [1713335885.851906243]: euclidean cluster cost time:29 ms[0m
+[0m[ INFO] [1713335885.851922387]: total cost time:123 ms[0m
+[0m[ INFO] [1713335885.912810950]: GetROI sucess[0m
+clip_cloud_ptr 65656
+[0m[ INFO] [1713335885.913426143]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335885.992445022]: remove ground cost time:79 ms[0m
+[0m[ INFO] [1713335886.022352175]: euclidean cluster cost time:29 ms[0m
+[0m[ INFO] [1713335886.022368608]: total cost time:123 ms[0m
+[0m[ INFO] [1713335886.082392879]: GetROI sucess[0m
+clip_cloud_ptr 65981
+[0m[ INFO] [1713335886.082945067]: ROI_Clip cost time:13 ms[0m
+[0m[ INFO] [1713335886.163417025]: remove ground cost time:80 ms[0m
+[0m[ INFO] [1713335886.193783572]: euclidean cluster cost time:30 ms[0m
+[0m[ INFO] [1713335886.193802471]: total cost time:123 ms[0m
+[0m[ INFO] [1713335886.258834717]: GetROI sucess[0m
+clip_cloud_ptr 65965
+[0m[ INFO] [1713335886.259391223]: ROI_Clip cost time:13 ms[0m
+[0m[ INFO] [1713335886.339872230]: remove ground cost time:80 ms[0m
+[0m[ INFO] [1713335886.369669789]: euclidean cluster cost time:29 ms[0m
+[0m[ INFO] [1713335886.369685307]: total cost time:123 ms[0m
+[0m[ INFO] [1713335886.434085468]: GetROI sucess[0m
+clip_cloud_ptr 65973
+[0m[ INFO] [1713335886.434642276]: ROI_Clip cost time:13 ms[0m
+[0m[ INFO] [1713335886.514746527]: remove ground cost time:80 ms[0m
+[0m[ INFO] [1713335886.544731875]: euclidean cluster cost time:29 ms[0m
+[0m[ INFO] [1713335886.544750013]: total cost time:123 ms[0m
+[0m[ INFO] [1713335886.605842543]: GetROI sucess[0m
+clip_cloud_ptr 65726
+[0m[ INFO] [1713335886.606405456]: ROI_Clip cost time:13 ms[0m
+[0m[ INFO] [1713335886.686322679]: remove ground cost time:79 ms[0m
+[0m[ INFO] [1713335886.716280732]: euclidean cluster cost time:29 ms[0m
+[0m[ INFO] [1713335886.716296363]: total cost time:123 ms[0m
+[0m[ INFO] [1713335886.777330565]: GetROI sucess[0m
+clip_cloud_ptr 65627
+[0m[ INFO] [1713335886.777889698]: ROI_Clip cost time:13 ms[0m
+[0m[ INFO] [1713335886.858904161]: remove ground cost time:81 ms[0m
+[0m[ INFO] [1713335886.888318290]: euclidean cluster cost time:29 ms[0m
+[0m[ INFO] [1713335886.888334380]: total cost time:123 ms[0m
+[0m[ INFO] [1713335886.949457229]: GetROI sucess[0m
+clip_cloud_ptr 65586
+[0m[ INFO] [1713335886.950011486]: ROI_Clip cost time:13 ms[0m
+[0m[ INFO] [1713335887.031996722]: remove ground cost time:81 ms[0m
+[0m[ INFO] [1713335887.062979125]: euclidean cluster cost time:30 ms[0m
+[0m[ INFO] [1713335887.063001239]: total cost time:126 ms[0m
+[0m[ INFO] [1713335887.127622969]: GetROI sucess[0m
+clip_cloud_ptr 65556
+[0m[ INFO] [1713335887.128175469]: ROI_Clip cost time:12 ms[0m
+[0m[ INFO] [1713335887.209511589]: remove ground cost time:81 ms[0m
+[0m[ INFO] [1713335887.239256795]: euclidean cluster cost time:29 ms[0m
+[0m[ INFO] [1713335887.239271602]: total cost time:124 ms[0m
+[0m[ INFO] [1713335887.302117798]: GetROI sucess[0m
+clip_cloud_ptr 65566
+[0m[ INFO] [1713335887.302712643]: ROI_Clip cost time:13 ms[0m
+[0m[ INFO] [1713335887.383655048]: remove ground cost time:80 ms[0m
+[0m[ INFO] [1713335887.413704668]: euclidean cluster cost time:30 ms[0m
+[0m[ INFO] [1713335887.413722724]: total cost time:124 ms[0m
+[0m[ INFO] [1713335887.475213772]: GetROI sucess[0m
+clip_cloud_ptr 65600
+[0m[ INFO] [1713335887.475766286]: ROI_Clip cost time:13 ms[0m
+[0m[ INFO] [1713335887.556527299]: remove ground cost time:80 ms[0m
+[0m[ INFO] [1713335887.586536898]: euclidean cluster cost time:30 ms[0m
+[0m[ INFO] [1713335887.586554515]: total cost time:124 ms[0m
+[0m[ INFO] [1713335887.646748536]: GetROI sucess[0m
+clip_cloud_ptr 65402
+[0m[ INFO] [1713335887.647310913]: ROI_Clip cost time:11 ms[0m
+[0m[ INFO] [1713335887.728418492]: remove ground cost time:81 ms[0m
+[0m[ INFO] [1713335887.758779117]: euclidean cluster cost time:30 ms[0m
+[0m[ INFO] [1713335887.758794984]: total cost time:122 ms[0m
+[0m[ INFO] [1713335887.819702212]: GetROI sucess[0m
+clip_cloud_ptr 65333
+[0m[ INFO] [1713335887.820260093]: ROI_Clip cost time:11 ms[0m
+[0m[ INFO] [1713335887.901831463]: remove ground cost time:81 ms[0m
+[0m[ INFO] [1713335887.931776546]: euclidean cluster cost time:29 ms[0m
+[0m[ INFO] [1713335887.931796986]: total cost time:122 ms[0m
+[0m[ INFO] [1713335887.990374698]: GetROI sucess[0m
+clip_cloud_ptr 65207
+[0m[ INFO] [1713335887.990925947]: ROI_Clip cost time:11 ms[0m
+[0m[ INFO] [1713335888.072742201]: remove ground cost time:81 ms[0m
+[0m[ INFO] [1713335888.102800319]: euclidean cluster cost time:30 ms[0m
+[0m[ INFO] [1713335888.102825788]: total cost time:123 ms[0m
+[0m[ INFO] [1713335888.163184178]: GetROI sucess[0m
+clip_cloud_ptr 65030
+[0m[ INFO] [1713335888.163730775]: ROI_Clip cost time:11 ms[0m
+[0m[ INFO] [1713335888.245895490]: remove ground cost time:82 ms[0m
+[0m[ INFO] [1713335888.275723752]: euclidean cluster cost time:29 ms[0m
+[0m[ INFO] [1713335888.275739756]: total cost time:123 ms[0m
+[0m[ INFO] [1713335888.336119950]: GetROI sucess[0m
+clip_cloud_ptr 64871
+[0m[ INFO] [1713335888.336687309]: ROI_Clip cost time:11 ms[0m
+[0m[ INFO] [1713335888.418720082]: remove ground cost time:82 ms[0m
+[0m[ INFO] [1713335888.448453349]: euclidean cluster cost time:29 ms[0m
+[0m[ INFO] [1713335888.448470151]: total cost time:122 ms[0m
+[0m[ INFO] [1713335888.508176882]: GetROI sucess[0m
+clip_cloud_ptr 64845
+[0m[ INFO] [1713335888.508727627]: ROI_Clip cost time:12 ms[0m
+[0m[ INFO] [1713335888.590670864]: remove ground cost time:81 ms[0m
+[0m[ INFO] [1713335888.621106847]: euclidean cluster cost time:30 ms[0m
+[0m[ INFO] [1713335888.621122709]: total cost time:124 ms[0m
+[0m[ INFO] [1713335888.679402827]: GetROI sucess[0m
+clip_cloud_ptr 64679
+[0m[ INFO] [1713335888.679950623]: ROI_Clip cost time:11 ms[0m
+[0m[ INFO] [1713335888.766893738]: remove ground cost time:86 ms[0m
+[0m[ INFO] [1713335888.797131482]: euclidean cluster cost time:30 ms[0m
+[0m[ INFO] [1713335888.797154977]: total cost time:128 ms[0m
+[0m[ INFO] [1713335888.858869562]: GetROI sucess[0m
+clip_cloud_ptr 64481
+[0m[ INFO] [1713335888.859422154]: ROI_Clip cost time:11 ms[0m
+[0m[ INFO] [1713335888.946124045]: remove ground cost time:86 ms[0m
+[0m[ INFO] [1713335888.976018670]: euclidean cluster cost time:29 ms[0m
+[0m[ INFO] [1713335888.976053762]: total cost time:128 ms[0m
+[0m[ INFO] [1713335889.036905294]: GetROI sucess[0m
+clip_cloud_ptr 64281
+[0m[ INFO] [1713335889.037502102]: ROI_Clip cost time:11 ms[0m
+[0m[ INFO] [1713335889.121783267]: remove ground cost time:84 ms[0m
+[0m[ INFO] [1713335889.152073658]: euclidean cluster cost time:30 ms[0m
+[0m[ INFO] [1713335889.152092461]: total cost time:125 ms[0m
+[0m[ INFO] [1713335889.213291906]: GetROI sucess[0m
+clip_cloud_ptr 64233
+[0m[ INFO] [1713335889.213882764]: ROI_Clip cost time:11 ms[0m
+[0m[ INFO] [1713335889.298666395]: remove ground cost time:84 ms[0m
+[0m[ INFO] [1713335889.328558638]: euclidean cluster cost time:29 ms[0m
+[0m[ INFO] [1713335889.328576733]: total cost time:126 ms[0m
+[0m[ INFO] [1713335889.388143892]: GetROI sucess[0m
+clip_cloud_ptr 64333
+[0m[ INFO] [1713335889.388706724]: ROI_Clip cost time:11 ms[0m
+[0m[ INFO] [1713335889.473353622]: remove ground cost time:84 ms[0m
+[0m[ INFO] [1713335889.504062978]: euclidean cluster cost time:30 ms[0m
+[0m[ INFO] [1713335889.504083542]: total cost time:126 ms[0m
+[0m[ INFO] [1713335889.564232226]: GetROI sucess[0m
+clip_cloud_ptr 64312
+[0m[ INFO] [1713335889.564778974]: ROI_Clip cost time:11 ms[0m
+[0m[ INFO] [1713335889.655075751]: remove ground cost time:90 ms[0m
+[0m[ INFO] [1713335889.685067957]: euclidean cluster cost time:29 ms[0m
+[0m[ INFO] [1713335889.685084837]: total cost time:131 ms[0m
+[0m[ INFO] [1713335889.746305784]: GetROI sucess[0m
+clip_cloud_ptr 64124
+[0m[ INFO] [1713335889.746866439]: ROI_Clip cost time:11 ms[0m
+[0m[ INFO] [1713335889.830431666]: remove ground cost time:83 ms[0m
+[0m[ INFO] [1713335889.860862746]: euclidean cluster cost time:30 ms[0m
+[0m[ INFO] [1713335889.860878921]: total cost time:125 ms[0m
+[0m[ INFO] [1713335889.922880315]: GetROI sucess[0m
+clip_cloud_ptr 63920
+[0m[ INFO] [1713335889.923421615]: ROI_Clip cost time:11 ms[0m
+[0m[ INFO] [1713335890.007464566]: remove ground cost time:84 ms[0m
+[0m[ INFO] [1713335890.037826154]: euclidean cluster cost time:30 ms[0m
+[0m[ INFO] [1713335890.037842453]: total cost time:125 ms[0m
+[0m[ INFO] [1713335890.098053510]: GetROI sucess[0m
+clip_cloud_ptr 63478
+[0m[ INFO] [1713335890.098654754]: ROI_Clip cost time:11 ms[0m
+[0m[ INFO] [1713335890.183675654]: remove ground cost time:85 ms[0m
+[0m[ INFO] [1713335890.215047772]: euclidean cluster cost time:31 ms[0m
+[0m[ INFO] [1713335890.215064056]: total cost time:127 ms[0m
+[0m[ INFO] [1713335890.277889317]: GetROI sucess[0m
+clip_cloud_ptr 63408
+[0m[ INFO] [1713335890.278428878]: ROI_Clip cost time:11 ms[0m
+[0m[ INFO] [1713335890.363452932]: remove ground cost time:85 ms[0m
+[0m[ INFO] [1713335890.393819450]: euclidean cluster cost time:30 ms[0m
+[0m[ INFO] [1713335890.393836658]: total cost time:126 ms[0m
+[0m[ INFO] [1713335890.456302394]: GetROI sucess[0m
+clip_cloud_ptr 63629
+[0m[ INFO] [1713335890.456843648]: ROI_Clip cost time:11 ms[0m
+[0m[ INFO] [1713335890.540597073]: remove ground cost time:83 ms[0m
+[0m[ INFO] [1713335890.571203701]: euclidean cluster cost time:30 ms[0m
+[0m[ INFO] [1713335890.571218909]: total cost time:125 ms[0m
+[0m[ INFO] [1713335890.633133449]: GetROI sucess[0m
+clip_cloud_ptr 63454
+[0m[ INFO] [1713335890.633706011]: ROI_Clip cost time:11 ms[0m
+[0m[ INFO] [1713335890.719781157]: remove ground cost time:86 ms[0m
+[0m[ INFO] [1713335890.750842843]: euclidean cluster cost time:31 ms[0m
+[0m[ INFO] [1713335890.750860940]: total cost time:128 ms[0m
+[0m[ INFO] [1713335890.813245064]: GetROI sucess[0m
+clip_cloud_ptr 63320
+[0m[ INFO] [1713335890.813779137]: ROI_Clip cost time:12 ms[0m
+[0m[ INFO] [1713335890.896685114]: remove ground cost time:82 ms[0m
+[0m[ INFO] [1713335890.928192076]: euclidean cluster cost time:31 ms[0m
+[0m[ INFO] [1713335890.928211356]: total cost time:126 ms[0m
+[0m[ INFO] [1713335890.990956267]: GetROI sucess[0m
+clip_cloud_ptr 63314
+[0m[ INFO] [1713335890.991491755]: ROI_Clip cost time:11 ms[0m
+[0m[ INFO] [1713335891.075721724]: remove ground cost time:84 ms[0m
+[0m[ INFO] [1713335891.106953100]: euclidean cluster cost time:31 ms[0m
+[0m[ INFO] [1713335891.106971491]: total cost time:126 ms[0m
+[0m[ INFO] [1713335891.168167079]: GetROI sucess[0m
+clip_cloud_ptr 63472
+[0m[ INFO] [1713335891.168704258]: ROI_Clip cost time:11 ms[0m
+[0m[ INFO] [1713335891.279574708]: remove ground cost time:110 ms[0m
+[0m[ INFO] [1713335891.331134902]: euclidean cluster cost time:51 ms[0m
+[0m[ INFO] [1713335891.331171035]: total cost time:173 ms[0m
+[0m[ INFO] [1713335891.430048249]: GetROI sucess[0m
+clip_cloud_ptr 63678
+[0m[ INFO] [1713335891.430891646]: ROI_Clip cost time:17 ms[0m
+[0m[ INFO] [1713335891.566577268]: remove ground cost time:135 ms[0m
+[0m[ INFO] [1713335891.619264820]: euclidean cluster cost time:52 ms[0m
+[0m[ INFO] [1713335891.619291690]: total cost time:206 ms[0m
+[0m[ INFO] [1713335891.717570526]: GetROI sucess[0m
+clip_cloud_ptr 63497
+[0m[ INFO] [1713335891.718413971]: ROI_Clip cost time:18 ms[0m
+[0m[ INFO] [1713335891.855635749]: remove ground cost time:137 ms[0m
+[0m[ INFO] [1713335891.906284653]: euclidean cluster cost time:50 ms[0m
+[0m[ INFO] [1713335891.906309674]: total cost time:206 ms[0m
+[0m[ INFO] [1713335892.002841868]: GetROI sucess[0m
+clip_cloud_ptr 63339
+[0m[ INFO] [1713335892.003807532]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335892.140495691]: remove ground cost time:136 ms[0m
+[0m[ INFO] [1713335892.190805311]: euclidean cluster cost time:50 ms[0m
+[0m[ INFO] [1713335892.190830339]: total cost time:202 ms[0m
+[0m[ INFO] [1713335892.292071144]: GetROI sucess[0m
+clip_cloud_ptr 64146
+[0m[ INFO] [1713335892.292943633]: ROI_Clip cost time:17 ms[0m
+[0m[ INFO] [1713335892.423947266]: remove ground cost time:130 ms[0m
+[0m[ INFO] [1713335892.472134379]: euclidean cluster cost time:48 ms[0m
+[0m[ INFO] [1713335892.472157721]: total cost time:197 ms[0m
+[0m[ INFO] [1713335892.567758919]: GetROI sucess[0m
+clip_cloud_ptr 64140
+[0m[ INFO] [1713335892.568594261]: ROI_Clip cost time:17 ms[0m
+[0m[ INFO] [1713335892.701977948]: remove ground cost time:133 ms[0m
+[0m[ INFO] [1713335892.752977102]: euclidean cluster cost time:50 ms[0m
+[0m[ INFO] [1713335892.753034230]: total cost time:201 ms[0m
+[0m[ INFO] [1713335892.851108339]: GetROI sucess[0m
+clip_cloud_ptr 63856
+[0m[ INFO] [1713335892.852032153]: ROI_Clip cost time:18 ms[0m
+[0m[ INFO] [1713335892.984197545]: remove ground cost time:132 ms[0m
+[0m[ INFO] [1713335893.034215918]: euclidean cluster cost time:50 ms[0m
+[0m[ INFO] [1713335893.034239082]: total cost time:200 ms[0m
+[0m[ INFO] [1713335893.133562561]: GetROI sucess[0m
+clip_cloud_ptr 63619
+[0m[ INFO] [1713335893.134411820]: ROI_Clip cost time:18 ms[0m
+[0m[ INFO] [1713335893.267572842]: remove ground cost time:133 ms[0m
+[0m[ INFO] [1713335893.318282527]: euclidean cluster cost time:50 ms[0m
+[0m[ INFO] [1713335893.318306012]: total cost time:201 ms[0m
+[0m[ INFO] [1713335893.416613740]: GetROI sucess[0m
+clip_cloud_ptr 63961
+[0m[ INFO] [1713335893.417481342]: ROI_Clip cost time:18 ms[0m
+[0m[ INFO] [1713335893.550311523]: remove ground cost time:132 ms[0m
+[0m[ INFO] [1713335893.599646699]: euclidean cluster cost time:49 ms[0m
+[0m[ INFO] [1713335893.599672581]: total cost time:200 ms[0m
+[0m[ INFO] [1713335893.696509573]: GetROI sucess[0m
+clip_cloud_ptr 63980
+[0m[ INFO] [1713335893.697372631]: ROI_Clip cost time:18 ms[0m
+[0m[ INFO] [1713335893.829034680]: remove ground cost time:131 ms[0m
+[0m[ INFO] [1713335893.877826411]: euclidean cluster cost time:48 ms[0m
+[0m[ INFO] [1713335893.877851726]: total cost time:198 ms[0m
+[0m[ INFO] [1713335893.972550292]: GetROI sucess[0m
+clip_cloud_ptr 65103
+[0m[ INFO] [1713335893.973419552]: ROI_Clip cost time:17 ms[0m
+[0m[ INFO] [1713335894.101796566]: remove ground cost time:128 ms[0m
+[0m[ INFO] [1713335894.151736811]: euclidean cluster cost time:49 ms[0m
+[0m[ INFO] [1713335894.151760600]: total cost time:195 ms[0m
+[0m[ INFO] [1713335894.251951360]: GetROI sucess[0m
+clip_cloud_ptr 64992
+[0m[ INFO] [1713335894.252812425]: ROI_Clip cost time:18 ms[0m
+[0m[ INFO] [1713335894.390107585]: remove ground cost time:137 ms[0m
+[0m[ INFO] [1713335894.441721073]: euclidean cluster cost time:51 ms[0m
+[0m[ INFO] [1713335894.441745618]: total cost time:207 ms[0m
+[0m[ INFO] [1713335894.543983554]: GetROI sucess[0m
+clip_cloud_ptr 64586
+[0m[ INFO] [1713335894.544849223]: ROI_Clip cost time:18 ms[0m
+[0m[ INFO] [1713335894.678934042]: remove ground cost time:134 ms[0m
+[0m[ INFO] [1713335894.730007455]: euclidean cluster cost time:51 ms[0m
+[0m[ INFO] [1713335894.730031275]: total cost time:203 ms[0m
+[0m[ INFO] [1713335894.831672197]: GetROI sucess[0m
+clip_cloud_ptr 64705
+[0m[ INFO] [1713335894.832539255]: ROI_Clip cost time:17 ms[0m
+[0m[ INFO] [1713335894.971482327]: remove ground cost time:138 ms[0m
+[0m[ INFO] [1713335895.023355170]: euclidean cluster cost time:51 ms[0m
+[0m[ INFO] [1713335895.023379124]: total cost time:208 ms[0m
+[0m[ INFO] [1713335895.125092941]: GetROI sucess[0m
+clip_cloud_ptr 64163
+[0m[ INFO] [1713335895.125933471]: ROI_Clip cost time:18 ms[0m
+[0m[ INFO] [1713335895.263079719]: remove ground cost time:137 ms[0m
+[0m[ INFO] [1713335895.314736269]: euclidean cluster cost time:51 ms[0m
+[0m[ INFO] [1713335895.314759603]: total cost time:207 ms[0m
+[0m[ INFO] [1713335895.410632002]: GetROI sucess[0m
+clip_cloud_ptr 63391
+[0m[ INFO] [1713335895.411575482]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335895.550846746]: remove ground cost time:139 ms[0m
+[0m[ INFO] [1713335895.602976894]: euclidean cluster cost time:52 ms[0m
+[0m[ INFO] [1713335895.603022211]: total cost time:207 ms[0m
+[0m[ INFO] [1713335895.701346796]: GetROI sucess[0m
+clip_cloud_ptr 62878
+[0m[ INFO] [1713335895.702195169]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335895.839339472]: remove ground cost time:137 ms[0m
+[0m[ INFO] [1713335895.892023251]: euclidean cluster cost time:52 ms[0m
+[0m[ INFO] [1713335895.892047886]: total cost time:205 ms[0m
+[0m[ INFO] [1713335895.988766899]: GetROI sucess[0m
+clip_cloud_ptr 62873
+[0m[ INFO] [1713335895.989622673]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335896.125857353]: remove ground cost time:136 ms[0m
+[0m[ INFO] [1713335896.176196866]: euclidean cluster cost time:50 ms[0m
+[0m[ INFO] [1713335896.176223416]: total cost time:201 ms[0m
+[0m[ INFO] [1713335896.268920439]: GetROI sucess[0m
+clip_cloud_ptr 62783
+[0m[ INFO] [1713335896.269755581]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335896.408840960]: remove ground cost time:139 ms[0m
+[0m[ INFO] [1713335896.460613097]: euclidean cluster cost time:51 ms[0m
+[0m[ INFO] [1713335896.460636161]: total cost time:205 ms[0m
+[0m[ INFO] [1713335896.554941582]: GetROI sucess[0m
+clip_cloud_ptr 62278
+[0m[ INFO] [1713335896.555759846]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335896.694562345]: remove ground cost time:138 ms[0m
+[0m[ INFO] [1713335896.745276665]: euclidean cluster cost time:50 ms[0m
+[0m[ INFO] [1713335896.745298857]: total cost time:204 ms[0m
+[0m[ INFO] [1713335896.841528193]: GetROI sucess[0m
+clip_cloud_ptr 62239
+[0m[ INFO] [1713335896.842349640]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335896.991563435]: remove ground cost time:149 ms[0m
+[0m[ INFO] [1713335897.042051764]: euclidean cluster cost time:50 ms[0m
+[0m[ INFO] [1713335897.042077639]: total cost time:214 ms[0m
+[0m[ INFO] [1713335897.138375877]: GetROI sucess[0m
+clip_cloud_ptr 61892
+[0m[ INFO] [1713335897.139194701]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335897.279103206]: remove ground cost time:139 ms[0m
+[0m[ INFO] [1713335897.328450661]: euclidean cluster cost time:49 ms[0m
+[0m[ INFO] [1713335897.328477881]: total cost time:203 ms[0m
+[0m[ INFO] [1713335897.419833387]: GetROI sucess[0m
+clip_cloud_ptr 60138
+[0m[ INFO] [1713335897.420650796]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335897.551054653]: remove ground cost time:130 ms[0m
+[0m[ INFO] [1713335897.599522854]: euclidean cluster cost time:48 ms[0m
+[0m[ INFO] [1713335897.599545932]: total cost time:193 ms[0m
+[0m[ INFO] [1713335897.689490192]: GetROI sucess[0m
+clip_cloud_ptr 59425
+[0m[ INFO] [1713335897.690308362]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335897.815936057]: remove ground cost time:125 ms[0m
+[0m[ INFO] [1713335897.863323309]: euclidean cluster cost time:47 ms[0m
+[0m[ INFO] [1713335897.863346560]: total cost time:187 ms[0m
+[0m[ INFO] [1713335897.923125472]: [INFO] euclidean cluster average time per hundred times:945059698 ms[0m
+[0m[ INFO] [1713335897.923149356]: [INFO] total average time per hundred times:1404797564 ms[0m
+[0m[ INFO] [1713335897.950320519]: GetROI sucess[0m
+clip_cloud_ptr 59134
+[0m[ INFO] [1713335897.951175486]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335898.076576557]: remove ground cost time:125 ms[0m
+[0m[ INFO] [1713335898.124957699]: euclidean cluster cost time:48 ms[0m
+[0m[ INFO] [1713335898.124986854]: total cost time:188 ms[0m
+[0m[ INFO] [1713335898.212763889]: GetROI sucess[0m
+clip_cloud_ptr 60460
+[0m[ INFO] [1713335898.213597948]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335898.344247310]: remove ground cost time:130 ms[0m
+[0m[ INFO] [1713335898.393162809]: euclidean cluster cost time:48 ms[0m
+[0m[ INFO] [1713335898.393185588]: total cost time:194 ms[0m
+[0m[ INFO] [1713335898.486993169]: GetROI sucess[0m
+clip_cloud_ptr 62543
+[0m[ INFO] [1713335898.487932987]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335898.627785521]: remove ground cost time:139 ms[0m
+[0m[ INFO] [1713335898.681125966]: euclidean cluster cost time:53 ms[0m
+[0m[ INFO] [1713335898.681149283]: total cost time:208 ms[0m
+[0m[ INFO] [1713335898.777869346]: GetROI sucess[0m
+clip_cloud_ptr 62976
+[0m[ INFO] [1713335898.778704942]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335898.923044918]: remove ground cost time:144 ms[0m
+[0m[ INFO] [1713335898.976168865]: euclidean cluster cost time:53 ms[0m
+[0m[ INFO] [1713335898.976193462]: total cost time:212 ms[0m
+[0m[ INFO] [1713335899.074091729]: GetROI sucess[0m
+clip_cloud_ptr 63262
+[0m[ INFO] [1713335899.074932939]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335899.217162958]: remove ground cost time:142 ms[0m
+[0m[ INFO] [1713335899.271444555]: euclidean cluster cost time:54 ms[0m
+[0m[ INFO] [1713335899.271468106]: total cost time:211 ms[0m
+[0m[ INFO] [1713335899.370368901]: GetROI sucess[0m
+clip_cloud_ptr 63080
+[0m[ INFO] [1713335899.371202432]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335899.513143833]: remove ground cost time:141 ms[0m
+[0m[ INFO] [1713335899.568984689]: euclidean cluster cost time:55 ms[0m
+[0m[ INFO] [1713335899.569011731]: total cost time:212 ms[0m
+[0m[ INFO] [1713335899.671007953]: GetROI sucess[0m
+clip_cloud_ptr 63468
+[0m[ INFO] [1713335899.671847320]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335899.813096569]: remove ground cost time:141 ms[0m
+[0m[ INFO] [1713335899.871336911]: euclidean cluster cost time:58 ms[0m
+[0m[ INFO] [1713335899.871361443]: total cost time:214 ms[0m
+[0m[ INFO] [1713335899.971640506]: GetROI sucess[0m
+clip_cloud_ptr 63201
+[0m[ INFO] [1713335899.972462817]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335900.117243549]: remove ground cost time:144 ms[0m
+[0m[ INFO] [1713335900.174113630]: euclidean cluster cost time:56 ms[0m
+[0m[ INFO] [1713335900.174144954]: total cost time:216 ms[0m
+[0m[ INFO] [1713335900.271893456]: GetROI sucess[0m
+clip_cloud_ptr 62904
+[0m[ INFO] [1713335900.272733499]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335900.415276911]: remove ground cost time:142 ms[0m
+[0m[ INFO] [1713335900.474216984]: euclidean cluster cost time:58 ms[0m
+[0m[ INFO] [1713335900.474241254]: total cost time:216 ms[0m
+[0m[ INFO] [1713335900.575895735]: GetROI sucess[0m
+clip_cloud_ptr 63101
+[0m[ INFO] [1713335900.576720026]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335900.719276265]: remove ground cost time:142 ms[0m
+[0m[ INFO] [1713335900.779289235]: euclidean cluster cost time:60 ms[0m
+[0m[ INFO] [1713335900.779322544]: total cost time:217 ms[0m
+[0m[ INFO] [1713335900.880217737]: GetROI sucess[0m
+clip_cloud_ptr 63168
+[0m[ INFO] [1713335900.881127270]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335901.025202368]: remove ground cost time:144 ms[0m
+[0m[ INFO] [1713335901.084906845]: euclidean cluster cost time:59 ms[0m
+[0m[ INFO] [1713335901.084932333]: total cost time:218 ms[0m
+[0m[ INFO] [1713335901.187384921]: GetROI sucess[0m
+clip_cloud_ptr 62768
+[0m[ INFO] [1713335901.188245928]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335901.330058665]: remove ground cost time:141 ms[0m
+[0m[ INFO] [1713335901.387156126]: euclidean cluster cost time:57 ms[0m
+[0m[ INFO] [1713335901.387179655]: total cost time:214 ms[0m
+[0m[ INFO] [1713335901.486913111]: GetROI sucess[0m
+clip_cloud_ptr 62199
+[0m[ INFO] [1713335901.487730634]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335901.624107333]: remove ground cost time:136 ms[0m
+[0m[ INFO] [1713335901.675527057]: euclidean cluster cost time:51 ms[0m
+[0m[ INFO] [1713335901.675550779]: total cost time:202 ms[0m
+[0m[ INFO] [1713335901.773353751]: GetROI sucess[0m
+clip_cloud_ptr 61997
+[0m[ INFO] [1713335901.774173519]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335901.910613413]: remove ground cost time:136 ms[0m
+[0m[ INFO] [1713335901.963481751]: euclidean cluster cost time:52 ms[0m
+[0m[ INFO] [1713335901.963506324]: total cost time:204 ms[0m
+[0m[ INFO] [1713335902.059722608]: GetROI sucess[0m
+clip_cloud_ptr 62262
+[0m[ INFO] [1713335902.060574813]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335902.197799358]: remove ground cost time:137 ms[0m
+[0m[ INFO] [1713335902.250085184]: euclidean cluster cost time:52 ms[0m
+[0m[ INFO] [1713335902.250110270]: total cost time:204 ms[0m
+[0m[ INFO] [1713335902.346106235]: GetROI sucess[0m
+clip_cloud_ptr 63166
+[0m[ INFO] [1713335902.346944966]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335902.490388536]: remove ground cost time:143 ms[0m
+[0m[ INFO] [1713335902.542869680]: euclidean cluster cost time:52 ms[0m
+[0m[ INFO] [1713335902.542892626]: total cost time:210 ms[0m
+[0m[ INFO] [1713335902.646720248]: GetROI sucess[0m
+clip_cloud_ptr 63225
+[0m[ INFO] [1713335902.647542855]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335902.791642995]: remove ground cost time:144 ms[0m
+[0m[ INFO] [1713335902.844497443]: euclidean cluster cost time:52 ms[0m
+[0m[ INFO] [1713335902.844520165]: total cost time:211 ms[0m
+[0m[ INFO] [1713335902.939796070]: GetROI sucess[0m
+clip_cloud_ptr 63112
+[0m[ INFO] [1713335902.940622518]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335903.084948178]: remove ground cost time:144 ms[0m
+[0m[ INFO] [1713335903.138756444]: euclidean cluster cost time:53 ms[0m
+[0m[ INFO] [1713335903.138780036]: total cost time:212 ms[0m
+[0m[ INFO] [1713335903.235190990]: GetROI sucess[0m
+clip_cloud_ptr 62740
+[0m[ INFO] [1713335903.236017692]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335903.378153387]: remove ground cost time:142 ms[0m
+[0m[ INFO] [1713335903.434069653]: euclidean cluster cost time:55 ms[0m
+[0m[ INFO] [1713335903.434092572]: total cost time:212 ms[0m
+[0m[ INFO] [1713335903.537364457]: GetROI sucess[0m
+clip_cloud_ptr 62658
+[0m[ INFO] [1713335903.538185443]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335903.682419928]: remove ground cost time:144 ms[0m
+[0m[ INFO] [1713335903.736411858]: euclidean cluster cost time:53 ms[0m
+[0m[ INFO] [1713335903.736435805]: total cost time:213 ms[0m
+[0m[ INFO] [1713335903.831445260]: GetROI sucess[0m
+clip_cloud_ptr 62511
+[0m[ INFO] [1713335903.832256364]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335903.978881612]: remove ground cost time:146 ms[0m
+[0m[ INFO] [1713335904.034335452]: euclidean cluster cost time:55 ms[0m
+[0m[ INFO] [1713335904.034363514]: total cost time:216 ms[0m
+[0m[ INFO] [1713335904.135855684]: GetROI sucess[0m
+clip_cloud_ptr 62445
+[0m[ INFO] [1713335904.136689570]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335904.287101728]: remove ground cost time:150 ms[0m
+[0m[ INFO] [1713335904.346180598]: euclidean cluster cost time:59 ms[0m
+[0m[ INFO] [1713335904.346204490]: total cost time:224 ms[0m
+[0m[ INFO] [1713335904.447138880]: GetROI sucess[0m
+clip_cloud_ptr 62376
+[0m[ INFO] [1713335904.447986101]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335904.596000137]: remove ground cost time:148 ms[0m
+[0m[ INFO] [1713335904.651864859]: euclidean cluster cost time:55 ms[0m
+[0m[ INFO] [1713335904.651898666]: total cost time:218 ms[0m
+[0m[ INFO] [1713335904.749414008]: GetROI sucess[0m
+clip_cloud_ptr 62210
+[0m[ INFO] [1713335904.750244861]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335904.899043645]: remove ground cost time:148 ms[0m
+[0m[ INFO] [1713335904.955719057]: euclidean cluster cost time:56 ms[0m
+[0m[ INFO] [1713335904.955743621]: total cost time:220 ms[0m
+[0m[ INFO] [1713335905.056341373]: GetROI sucess[0m
+clip_cloud_ptr 60695
+[0m[ INFO] [1713335905.057204210]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335905.201099193]: remove ground cost time:143 ms[0m
+[0m[ INFO] [1713335905.256645140]: euclidean cluster cost time:55 ms[0m
+[0m[ INFO] [1713335905.256668438]: total cost time:214 ms[0m
+[0m[ INFO] [1713335905.357608420]: GetROI sucess[0m
+clip_cloud_ptr 61407
+[0m[ INFO] [1713335905.358422858]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335905.497601205]: remove ground cost time:139 ms[0m
+[0m[ INFO] [1713335905.553416429]: euclidean cluster cost time:55 ms[0m
+[0m[ INFO] [1713335905.553440972]: total cost time:209 ms[0m
+[0m[ INFO] [1713335905.652580955]: GetROI sucess[0m
+clip_cloud_ptr 62262
+[0m[ INFO] [1713335905.653568908]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335905.805029504]: remove ground cost time:151 ms[0m
+[0m[ INFO] [1713335905.863481467]: euclidean cluster cost time:58 ms[0m
+[0m[ INFO] [1713335905.863506052]: total cost time:224 ms[0m
+[0m[ INFO] [1713335905.967050534]: GetROI sucess[0m
+clip_cloud_ptr 62677
+[0m[ INFO] [1713335905.968061181]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335906.121638388]: remove ground cost time:153 ms[0m
+[0m[ INFO] [1713335906.181631055]: euclidean cluster cost time:59 ms[0m
+[0m[ INFO] [1713335906.181657539]: total cost time:228 ms[0m
+[0m[ INFO] [1713335906.282485132]: GetROI sucess[0m
+clip_cloud_ptr 62671
+[0m[ INFO] [1713335906.283295562]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335906.434239411]: remove ground cost time:150 ms[0m
+[0m[ INFO] [1713335906.492925489]: euclidean cluster cost time:58 ms[0m
+[0m[ INFO] [1713335906.492951992]: total cost time:224 ms[0m
+[0m[ INFO] [1713335906.595676687]: GetROI sucess[0m
+clip_cloud_ptr 62416
+[0m[ INFO] [1713335906.596484164]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335906.750457638]: remove ground cost time:153 ms[0m
+[0m[ INFO] [1713335906.808700126]: euclidean cluster cost time:58 ms[0m
+[0m[ INFO] [1713335906.808724240]: total cost time:226 ms[0m
+[0m[ INFO] [1713335906.911426825]: GetROI sucess[0m
+clip_cloud_ptr 62531
+[0m[ INFO] [1713335906.913018444]: ROI_Clip cost time:16 ms[0m
+[0m[ INFO] [1713335907.063291102]: remove ground cost time:150 ms[0m
+[0m[ INFO] [1713335907.122239598]: euclidean cluster cost time:58 ms[0m
+[0m[ INFO] [1713335907.122263251]: total cost time:226 ms[0m
+[0m[ INFO] [1713335907.221375128]: GetROI sucess[0m
+clip_cloud_ptr 62093
+[0m[ INFO] [1713335907.222216806]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335907.373545483]: remove ground cost time:151 ms[0m
+[0m[ INFO] [1713335907.432445813]: euclidean cluster cost time:58 ms[0m
+[0m[ INFO] [1713335907.432468378]: total cost time:224 ms[0m
+[0m[ INFO] [1713335907.534533981]: GetROI sucess[0m
+clip_cloud_ptr 61874
+[0m[ INFO] [1713335907.535339912]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335907.683864758]: remove ground cost time:148 ms[0m
+[0m[ INFO] [1713335907.742965526]: euclidean cluster cost time:59 ms[0m
+[0m[ INFO] [1713335907.742991315]: total cost time:222 ms[0m
+[0m[ INFO] [1713335907.841482082]: GetROI sucess[0m
+clip_cloud_ptr 61725
+[0m[ INFO] [1713335907.842296551]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335907.992130556]: remove ground cost time:149 ms[0m
+[0m[ INFO] [1713335908.051989284]: euclidean cluster cost time:59 ms[0m
+[0m[ INFO] [1713335908.052018426]: total cost time:224 ms[0m
+[0m[ INFO] [1713335908.159552740]: GetROI sucess[0m
+clip_cloud_ptr 61210
+[0m[ INFO] [1713335908.160355407]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335908.309102964]: remove ground cost time:148 ms[0m
+[0m[ INFO] [1713335908.367040296]: euclidean cluster cost time:57 ms[0m
+[0m[ INFO] [1713335908.367063308]: total cost time:221 ms[0m
+[0m[ INFO] [1713335908.467013600]: GetROI sucess[0m
+clip_cloud_ptr 61424
+[0m[ INFO] [1713335908.467821010]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335908.615296963]: remove ground cost time:147 ms[0m
+[0m[ INFO] [1713335908.670846018]: euclidean cluster cost time:55 ms[0m
+[0m[ INFO] [1713335908.670867254]: total cost time:217 ms[0m
+[0m[ INFO] [1713335908.771765956]: GetROI sucess[0m
+clip_cloud_ptr 61827
+[0m[ INFO] [1713335908.772576861]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335908.922387262]: remove ground cost time:149 ms[0m
+[0m[ INFO] [1713335908.979679626]: euclidean cluster cost time:57 ms[0m
+[0m[ INFO] [1713335908.979707577]: total cost time:221 ms[0m
+[0m[ INFO] [1713335909.083205905]: GetROI sucess[0m
+clip_cloud_ptr 61695
+[0m[ INFO] [1713335909.084022433]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335909.229449769]: remove ground cost time:145 ms[0m
+[0m[ INFO] [1713335909.289898622]: euclidean cluster cost time:60 ms[0m
+[0m[ INFO] [1713335909.289924537]: total cost time:221 ms[0m
+[0m[ INFO] [1713335909.397232972]: GetROI sucess[0m
+clip_cloud_ptr 61125
+[0m[ INFO] [1713335909.398074078]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335909.544306978]: remove ground cost time:146 ms[0m
+[0m[ INFO] [1713335909.602653647]: euclidean cluster cost time:58 ms[0m
+[0m[ INFO] [1713335909.602677815]: total cost time:219 ms[0m
+[0m[ INFO] [1713335909.701280576]: GetROI sucess[0m
+clip_cloud_ptr 62273
+[0m[ INFO] [1713335909.702084992]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335909.850714940]: remove ground cost time:148 ms[0m
+[0m[ INFO] [1713335909.910710305]: euclidean cluster cost time:59 ms[0m
+[0m[ INFO] [1713335909.910745814]: total cost time:223 ms[0m
+[0m[ INFO] [1713335910.017997583]: GetROI sucess[0m
+clip_cloud_ptr 61872
+[0m[ INFO] [1713335910.018811541]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335910.169206798]: remove ground cost time:150 ms[0m
+[0m[ INFO] [1713335910.228494093]: euclidean cluster cost time:59 ms[0m
+[0m[ INFO] [1713335910.228518307]: total cost time:224 ms[0m
+[0m[ INFO] [1713335910.330386493]: GetROI sucess[0m
+clip_cloud_ptr 61798
+[0m[ INFO] [1713335910.331195466]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335910.483473411]: remove ground cost time:152 ms[0m
+[0m[ INFO] [1713335910.543422912]: euclidean cluster cost time:59 ms[0m
+[0m[ INFO] [1713335910.543447971]: total cost time:226 ms[0m
+[0m[ INFO] [1713335910.643752695]: GetROI sucess[0m
+clip_cloud_ptr 61519
+[0m[ INFO] [1713335910.644556423]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335910.796221276]: remove ground cost time:151 ms[0m
+[0m[ INFO] [1713335910.857296602]: euclidean cluster cost time:61 ms[0m
+[0m[ INFO] [1713335910.857325640]: total cost time:227 ms[0m
+[0m[ INFO] [1713335910.962535801]: GetROI sucess[0m
+clip_cloud_ptr 61615
+[0m[ INFO] [1713335910.963349502]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335911.114121502]: remove ground cost time:150 ms[0m
+[0m[ INFO] [1713335911.173246633]: euclidean cluster cost time:59 ms[0m
+[0m[ INFO] [1713335911.173269314]: total cost time:224 ms[0m
+[0m[ INFO] [1713335911.274572732]: GetROI sucess[0m
+clip_cloud_ptr 61275
+[0m[ INFO] [1713335911.275375945]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335911.428036402]: remove ground cost time:152 ms[0m
+[0m[ INFO] [1713335911.487048707]: euclidean cluster cost time:59 ms[0m
+[0m[ INFO] [1713335911.487076207]: total cost time:226 ms[0m
+[0m[ INFO] [1713335911.589226490]: GetROI sucess[0m
+clip_cloud_ptr 60845
+[0m[ INFO] [1713335911.590026821]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335911.737298728]: remove ground cost time:147 ms[0m
+[0m[ INFO] [1713335911.796329478]: euclidean cluster cost time:59 ms[0m
+[0m[ INFO] [1713335911.796354813]: total cost time:220 ms[0m
+[0m[ INFO] [1713335911.901401334]: GetROI sucess[0m
+clip_cloud_ptr 60732
+[0m[ INFO] [1713335911.902202084]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335912.048716120]: remove ground cost time:146 ms[0m
+[0m[ INFO] [1713335912.107001699]: euclidean cluster cost time:58 ms[0m
+[0m[ INFO] [1713335912.107026615]: total cost time:219 ms[0m
+[0m[ INFO] [1713335912.213215588]: GetROI sucess[0m
+clip_cloud_ptr 60860
+[0m[ INFO] [1713335912.214033609]: ROI_Clip cost time:16 ms[0m
+[0m[ INFO] [1713335912.365181762]: remove ground cost time:151 ms[0m
+[0m[ INFO] [1713335912.422612545]: euclidean cluster cost time:57 ms[0m
+[0m[ INFO] [1713335912.422635323]: total cost time:225 ms[0m
+[0m[ INFO] [1713335912.524454952]: GetROI sucess[0m
+clip_cloud_ptr 60777
+[0m[ INFO] [1713335912.525266046]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335912.679752301]: remove ground cost time:154 ms[0m
+[0m[ INFO] [1713335912.737096796]: euclidean cluster cost time:57 ms[0m
+[0m[ INFO] [1713335912.737120040]: total cost time:226 ms[0m
+[0m[ INFO] [1713335912.837237437]: GetROI sucess[0m
+clip_cloud_ptr 61404
+[0m[ INFO] [1713335912.838042549]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335912.976861493]: remove ground cost time:138 ms[0m
+[0m[ INFO] [1713335913.035570453]: euclidean cluster cost time:58 ms[0m
+[0m[ INFO] [1713335913.035593551]: total cost time:212 ms[0m
+[0m[ INFO] [1713335913.137671807]: GetROI sucess[0m
+clip_cloud_ptr 62359
+[0m[ INFO] [1713335913.138500423]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335913.281162161]: remove ground cost time:142 ms[0m
+[0m[ INFO] [1713335913.340532400]: euclidean cluster cost time:59 ms[0m
+[0m[ INFO] [1713335913.340556462]: total cost time:216 ms[0m
+[0m[ INFO] [1713335913.443883499]: GetROI sucess[0m
+clip_cloud_ptr 62370
+[0m[ INFO] [1713335913.444698025]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335913.589092282]: remove ground cost time:144 ms[0m
+[0m[ INFO] [1713335913.650042185]: euclidean cluster cost time:60 ms[0m
+[0m[ INFO] [1713335913.650065906]: total cost time:219 ms[0m
+[0m[ INFO] [1713335913.753512429]: GetROI sucess[0m
+clip_cloud_ptr 62130
+[0m[ INFO] [1713335913.754316975]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335913.898984503]: remove ground cost time:144 ms[0m
+[0m[ INFO] [1713335913.960655199]: euclidean cluster cost time:61 ms[0m
+[0m[ INFO] [1713335913.960680522]: total cost time:220 ms[0m
+[0m[ INFO] [1713335914.065185913]: GetROI sucess[0m
+clip_cloud_ptr 62227
+[0m[ INFO] [1713335914.065996488]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335914.212427926]: remove ground cost time:146 ms[0m
+[0m[ INFO] [1713335914.274402805]: euclidean cluster cost time:61 ms[0m
+[0m[ INFO] [1713335914.274425840]: total cost time:222 ms[0m
+[0m[ INFO] [1713335914.380570783]: GetROI sucess[0m
+clip_cloud_ptr 62060
+[0m[ INFO] [1713335914.381386244]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335914.526174445]: remove ground cost time:144 ms[0m
+[0m[ INFO] [1713335914.586388184]: euclidean cluster cost time:60 ms[0m
+[0m[ INFO] [1713335914.586410612]: total cost time:219 ms[0m
+[0m[ INFO] [1713335914.689643409]: GetROI sucess[0m
+clip_cloud_ptr 61822
+[0m[ INFO] [1713335914.690442582]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335914.835329007]: remove ground cost time:144 ms[0m
+[0m[ INFO] [1713335914.901830451]: euclidean cluster cost time:66 ms[0m
+[0m[ INFO] [1713335914.901854692]: total cost time:225 ms[0m
+[0m[ INFO] [1713335915.018231043]: GetROI sucess[0m
+clip_cloud_ptr 61685
+[0m[ INFO] [1713335915.019052400]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335915.165562188]: remove ground cost time:146 ms[0m
+[0m[ INFO] [1713335915.230010216]: euclidean cluster cost time:64 ms[0m
+[0m[ INFO] [1713335915.230034062]: total cost time:225 ms[0m
+[0m[ INFO] [1713335915.340194057]: GetROI sucess[0m
+clip_cloud_ptr 60576
+[0m[ INFO] [1713335915.341015063]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335915.479180550]: remove ground cost time:138 ms[0m
+[0m[ INFO] [1713335915.544668528]: euclidean cluster cost time:65 ms[0m
+[0m[ INFO] [1713335915.544690939]: total cost time:218 ms[0m
+[0m[ INFO] [1713335915.649606351]: GetROI sucess[0m
+clip_cloud_ptr 60429
+[0m[ INFO] [1713335915.650422362]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335915.790159195]: remove ground cost time:139 ms[0m
+[0m[ INFO] [1713335915.856309104]: euclidean cluster cost time:66 ms[0m
+[0m[ INFO] [1713335915.856333528]: total cost time:220 ms[0m
+[0m[ INFO] [1713335915.964837354]: GetROI sucess[0m
+clip_cloud_ptr 61647
+[0m[ INFO] [1713335915.965659004]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335916.110208243]: remove ground cost time:144 ms[0m
+[0m[ INFO] [1713335916.177305647]: euclidean cluster cost time:67 ms[0m
+[0m[ INFO] [1713335916.177353148]: total cost time:226 ms[0m
+[0m[ INFO] [1713335916.287591936]: GetROI sucess[0m
+clip_cloud_ptr 61272
+[0m[ INFO] [1713335916.288409324]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335916.436843233]: remove ground cost time:148 ms[0m
+[0m[ INFO] [1713335916.506119795]: euclidean cluster cost time:69 ms[0m
+[0m[ INFO] [1713335916.506145254]: total cost time:232 ms[0m
+[0m[ INFO] [1713335916.615313700]: GetROI sucess[0m
+clip_cloud_ptr 61812
+[0m[ INFO] [1713335916.616116026]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335916.766429472]: remove ground cost time:150 ms[0m
+[0m[ INFO] [1713335916.834747828]: euclidean cluster cost time:68 ms[0m
+[0m[ INFO] [1713335916.834776907]: total cost time:233 ms[0m
+[0m[ INFO] [1713335916.944786844]: GetROI sucess[0m
+clip_cloud_ptr 61994
+[0m[ INFO] [1713335916.945673761]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335917.093686426]: remove ground cost time:148 ms[0m
+[0m[ INFO] [1713335917.164912456]: euclidean cluster cost time:71 ms[0m
+[0m[ INFO] [1713335917.164937158]: total cost time:234 ms[0m
+[0m[ INFO] [1713335917.278101688]: GetROI sucess[0m
+clip_cloud_ptr 62047
+[0m[ INFO] [1713335917.278911453]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335917.427714198]: remove ground cost time:148 ms[0m
+[0m[ INFO] [1713335917.497010729]: euclidean cluster cost time:69 ms[0m
+[0m[ INFO] [1713335917.497034946]: total cost time:232 ms[0m
+[0m[ INFO] [1713335917.605727603]: GetROI sucess[0m
+clip_cloud_ptr 61823
+[0m[ INFO] [1713335917.606575430]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335917.754941972]: remove ground cost time:148 ms[0m
+[0m[ INFO] [1713335917.822562220]: euclidean cluster cost time:67 ms[0m
+[0m[ INFO] [1713335917.822586239]: total cost time:231 ms[0m
+[0m[ INFO] [1713335917.930475169]: GetROI sucess[0m
+clip_cloud_ptr 61605
+[0m[ INFO] [1713335917.931270073]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335918.076730591]: remove ground cost time:145 ms[0m
+[0m[ INFO] [1713335918.144169714]: euclidean cluster cost time:67 ms[0m
+[0m[ INFO] [1713335918.144197403]: total cost time:227 ms[0m
+[0m[ INFO] [1713335918.254121874]: GetROI sucess[0m
+clip_cloud_ptr 61441
+[0m[ INFO] [1713335918.254937344]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335918.395002874]: remove ground cost time:140 ms[0m
+[0m[ INFO] [1713335918.464268622]: euclidean cluster cost time:69 ms[0m
+[0m[ INFO] [1713335918.464292820]: total cost time:224 ms[0m
+[0m[ INFO] [1713335918.574028203]: GetROI sucess[0m
+clip_cloud_ptr 61432
+[0m[ INFO] [1713335918.574828711]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335918.717677901]: remove ground cost time:142 ms[0m
+[0m[ INFO] [1713335918.785492626]: euclidean cluster cost time:67 ms[0m
+[0m[ INFO] [1713335918.785518197]: total cost time:225 ms[0m
+[0m[ INFO] [1713335918.895977766]: GetROI sucess[0m
+clip_cloud_ptr 61552
+[0m[ INFO] [1713335918.896820677]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335919.042043636]: remove ground cost time:145 ms[0m
+[0m[ INFO] [1713335919.110037188]: euclidean cluster cost time:68 ms[0m
+[0m[ INFO] [1713335919.110062677]: total cost time:227 ms[0m
+[0m[ INFO] [1713335919.217703731]: GetROI sucess[0m
+clip_cloud_ptr 61575
+[0m[ INFO] [1713335919.218508890]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335919.363675922]: remove ground cost time:145 ms[0m
+[0m[ INFO] [1713335919.435973966]: euclidean cluster cost time:72 ms[0m
+[0m[ INFO] [1713335919.436008934]: total cost time:232 ms[0m
+[0m[ INFO] [1713335919.545581031]: GetROI sucess[0m
+clip_cloud_ptr 62223
+[0m[ INFO] [1713335919.546387976]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335919.690655127]: remove ground cost time:144 ms[0m
+[0m[ INFO] [1713335919.762554413]: euclidean cluster cost time:71 ms[0m
+[0m[ INFO] [1713335919.762595150]: total cost time:230 ms[0m
+[0m[ INFO] [1713335919.873819805]: GetROI sucess[0m
+clip_cloud_ptr 62024
+[0m[ INFO] [1713335919.874641761]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335920.018347458]: remove ground cost time:143 ms[0m
+[0m[ INFO] [1713335920.091664410]: euclidean cluster cost time:73 ms[0m
+[0m[ INFO] [1713335920.091691818]: total cost time:231 ms[0m
+[0m[ INFO] [1713335920.204607380]: GetROI sucess[0m
+clip_cloud_ptr 62327
+[0m[ INFO] [1713335920.205424638]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335920.350087331]: remove ground cost time:144 ms[0m
+[0m[ INFO] [1713335920.423872356]: euclidean cluster cost time:73 ms[0m
+[0m[ INFO] [1713335920.423898204]: total cost time:233 ms[0m
+[0m[ INFO] [1713335920.537222401]: GetROI sucess[0m
+clip_cloud_ptr 62469
+[0m[ INFO] [1713335920.538051650]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335920.684558004]: remove ground cost time:146 ms[0m
+[0m[ INFO] [1713335920.758464620]: euclidean cluster cost time:73 ms[0m
+[0m[ INFO] [1713335920.758501037]: total cost time:235 ms[0m
+[0m[ INFO] [1713335920.866535573]: GetROI sucess[0m
+clip_cloud_ptr 62395
+[0m[ INFO] [1713335920.867347826]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335921.006832050]: remove ground cost time:139 ms[0m
+[0m[ INFO] [1713335921.076614498]: euclidean cluster cost time:69 ms[0m
+[0m[ INFO] [1713335921.076642096]: total cost time:223 ms[0m
+[0m[ INFO] [1713335921.187225217]: GetROI sucess[0m
+clip_cloud_ptr 62589
+[0m[ INFO] [1713335921.188034123]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335921.329688137]: remove ground cost time:141 ms[0m
+[0m[ INFO] [1713335921.404053668]: euclidean cluster cost time:74 ms[0m
+[0m[ INFO] [1713335921.404080094]: total cost time:230 ms[0m
+[0m[ INFO] [1713335921.518343326]: GetROI sucess[0m
+clip_cloud_ptr 62551
+[0m[ INFO] [1713335921.519146713]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335921.663889525]: remove ground cost time:144 ms[0m
+[0m[ INFO] [1713335921.736791178]: euclidean cluster cost time:72 ms[0m
+[0m[ INFO] [1713335921.736814052]: total cost time:232 ms[0m
+[0m[ INFO] [1713335921.849275286]: GetROI sucess[0m
+clip_cloud_ptr 62571
+[0m[ INFO] [1713335921.850137642]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335921.997180200]: remove ground cost time:147 ms[0m
+[0m[ INFO] [1713335922.075731011]: euclidean cluster cost time:78 ms[0m
+[0m[ INFO] [1713335922.075763751]: total cost time:240 ms[0m
+[0m[ INFO] [1713335922.191436779]: GetROI sucess[0m
+clip_cloud_ptr 62123
+[0m[ INFO] [1713335922.192244646]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335922.342384599]: remove ground cost time:150 ms[0m
+[0m[ INFO] [1713335922.418859397]: euclidean cluster cost time:76 ms[0m
+[0m[ INFO] [1713335922.418885678]: total cost time:241 ms[0m
+[0m[ INFO] [1713335922.533731289]: GetROI sucess[0m
+clip_cloud_ptr 62212
+[0m[ INFO] [1713335922.534546864]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335922.680663921]: remove ground cost time:146 ms[0m
+[0m[ INFO] [1713335922.758688280]: euclidean cluster cost time:78 ms[0m
+[0m[ INFO] [1713335922.758714249]: total cost time:239 ms[0m
+[0m[ INFO] [1713335922.873429918]: GetROI sucess[0m
+clip_cloud_ptr 61807
+[0m[ INFO] [1713335922.874236208]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335923.018620884]: remove ground cost time:144 ms[0m
+[0m[ INFO] [1713335923.097193444]: euclidean cluster cost time:78 ms[0m
+[0m[ INFO] [1713335923.097226880]: total cost time:237 ms[0m
+[0m[ INFO] [1713335923.215206455]: GetROI sucess[0m
+clip_cloud_ptr 60811
+[0m[ INFO] [1713335923.216041267]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335923.356937874]: remove ground cost time:140 ms[0m
+[0m[ INFO] [1713335923.434580256]: euclidean cluster cost time:77 ms[0m
+[0m[ INFO] [1713335923.434603834]: total cost time:233 ms[0m
+[0m[ INFO] [1713335923.548038627]: GetROI sucess[0m
+clip_cloud_ptr 58776
+[0m[ INFO] [1713335923.548847516]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335923.673726978]: remove ground cost time:124 ms[0m
+[0m[ INFO] [1713335923.749509007]: euclidean cluster cost time:75 ms[0m
+[0m[ INFO] [1713335923.749532137]: total cost time:215 ms[0m
+[0m[ INFO] [1713335923.857957702]: GetROI sucess[0m
+clip_cloud_ptr 58911
+[0m[ INFO] [1713335923.858801906]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335923.982324532]: remove ground cost time:123 ms[0m
+[0m[ INFO] [1713335924.057329547]: euclidean cluster cost time:74 ms[0m
+[0m[ INFO] [1713335924.057364976]: total cost time:212 ms[0m
+[0m[ INFO] [1713335924.170197281]: GetROI sucess[0m
+clip_cloud_ptr 61104
+[0m[ INFO] [1713335924.171010957]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335924.304614390]: remove ground cost time:133 ms[0m
+[0m[ INFO] [1713335924.382851182]: euclidean cluster cost time:78 ms[0m
+[0m[ INFO] [1713335924.382874865]: total cost time:226 ms[0m
+[0m[ INFO] [1713335924.494048514]: GetROI sucess[0m
+clip_cloud_ptr 62641
+[0m[ INFO] [1713335924.494858647]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335924.637738001]: remove ground cost time:142 ms[0m
+[0m[ INFO] [1713335924.720700154]: euclidean cluster cost time:82 ms[0m
+[0m[ INFO] [1713335924.720740275]: total cost time:240 ms[0m
+[0m[ INFO] [1713335924.841628255]: GetROI sucess[0m
+clip_cloud_ptr 62790
+[0m[ INFO] [1713335924.842502936]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335924.984016906]: remove ground cost time:141 ms[0m
+[0m[ INFO] [1713335925.064691434]: euclidean cluster cost time:80 ms[0m
+[0m[ INFO] [1713335925.064718792]: total cost time:237 ms[0m
+[0m[ INFO] [1713335925.182302754]: GetROI sucess[0m
+clip_cloud_ptr 62642
+[0m[ INFO] [1713335925.183140322]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335925.325694266]: remove ground cost time:142 ms[0m
+[0m[ INFO] [1713335925.406640586]: euclidean cluster cost time:80 ms[0m
+[0m[ INFO] [1713335925.406666795]: total cost time:238 ms[0m
+[0m[ INFO] [1713335925.525404833]: GetROI sucess[0m
+clip_cloud_ptr 62934
+[0m[ INFO] [1713335925.526221991]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335925.667874775]: remove ground cost time:141 ms[0m
+[0m[ INFO] [1713335925.752527448]: euclidean cluster cost time:84 ms[0m
+[0m[ INFO] [1713335925.752552279]: total cost time:241 ms[0m
+[0m[ INFO] [1713335925.871459835]: GetROI sucess[0m
+clip_cloud_ptr 61886
+[0m[ INFO] [1713335925.872300172]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335926.012694713]: remove ground cost time:140 ms[0m
+[0m[ INFO] [1713335926.095388872]: euclidean cluster cost time:82 ms[0m
+[0m[ INFO] [1713335926.095413572]: total cost time:238 ms[0m
+[0m[ INFO] [1713335926.210827495]: GetROI sucess[0m
+clip_cloud_ptr 61583
+[0m[ INFO] [1713335926.211634460]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335926.351173651]: remove ground cost time:139 ms[0m
+[0m[ INFO] [1713335926.436068676]: euclidean cluster cost time:84 ms[0m
+[0m[ INFO] [1713335926.436098570]: total cost time:239 ms[0m
+[0m[ INFO] [1713335926.554560896]: GetROI sucess[0m
+clip_cloud_ptr 61721
+[0m[ INFO] [1713335926.555538780]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335926.698127793]: remove ground cost time:142 ms[0m
+[0m[ INFO] [1713335926.781989428]: euclidean cluster cost time:83 ms[0m
+[0m[ INFO] [1713335926.782019805]: total cost time:241 ms[0m
+[0m[ INFO] [1713335926.900756619]: GetROI sucess[0m
+clip_cloud_ptr 61873
+[0m[ INFO] [1713335926.901659719]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335927.044498046]: remove ground cost time:142 ms[0m
+[0m[ INFO] [1713335927.127569440]: euclidean cluster cost time:83 ms[0m
+[0m[ INFO] [1713335927.127602280]: total cost time:240 ms[0m
+[0m[ INFO] [1713335927.248412760]: GetROI sucess[0m
+clip_cloud_ptr 60547
+[0m[ INFO] [1713335927.249418744]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335927.387131305]: remove ground cost time:137 ms[0m
+[0m[ INFO] [1713335927.469827061]: euclidean cluster cost time:82 ms[0m
+[0m[ INFO] [1713335927.469849726]: total cost time:235 ms[0m
+[0m[ INFO] [1713335927.586408221]: GetROI sucess[0m
+clip_cloud_ptr 59346
+[0m[ INFO] [1713335927.587206575]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335927.719089110]: remove ground cost time:131 ms[0m
+[0m[ INFO] [1713335927.800429303]: euclidean cluster cost time:81 ms[0m
+[0m[ INFO] [1713335927.800454088]: total cost time:227 ms[0m
+[0m[ INFO] [1713335927.915658499]: GetROI sucess[0m
+clip_cloud_ptr 60417
+[0m[ INFO] [1713335927.916620170]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335928.054653812]: remove ground cost time:138 ms[0m
+[0m[ INFO] [1713335928.132836649]: euclidean cluster cost time:78 ms[0m
+[0m[ INFO] [1713335928.132862486]: total cost time:231 ms[0m
+[0m[ INFO] [1713335928.242065503]: GetROI sucess[0m
+clip_cloud_ptr 60803
+[0m[ INFO] [1713335928.242870266]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335928.375822599]: remove ground cost time:132 ms[0m
+[0m[ INFO] [1713335928.455610508]: euclidean cluster cost time:79 ms[0m
+[0m[ INFO] [1713335928.455632794]: total cost time:227 ms[0m
+[0m[ INFO] [1713335928.567332430]: GetROI sucess[0m
+clip_cloud_ptr 61861
+[0m[ INFO] [1713335928.568143826]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335928.703743288]: remove ground cost time:135 ms[0m
+[0m[ INFO] [1713335928.783381955]: euclidean cluster cost time:79 ms[0m
+[0m[ INFO] [1713335928.783403803]: total cost time:229 ms[0m
+[0m[ INFO] [1713335928.898009535]: GetROI sucess[0m
+clip_cloud_ptr 61974
+[0m[ INFO] [1713335928.898813375]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335929.036665551]: remove ground cost time:137 ms[0m
+[0m[ INFO] [1713335929.116708286]: euclidean cluster cost time:80 ms[0m
+[0m[ INFO] [1713335929.116731327]: total cost time:232 ms[0m
+[0m[ INFO] [1713335929.230881164]: GetROI sucess[0m
+clip_cloud_ptr 61895
+[0m[ INFO] [1713335929.231678748]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335929.369534460]: remove ground cost time:137 ms[0m
+[0m[ INFO] [1713335929.445117174]: euclidean cluster cost time:75 ms[0m
+[0m[ INFO] [1713335929.445141989]: total cost time:227 ms[0m
+[0m[ INFO] [1713335929.564139444]: [INFO] euclidean cluster average time per hundred times:65 ms[0m
+[0m[ INFO] [1713335929.564169641]: [INFO] total average time per hundred times:223 ms[0m
+[0m[ INFO] [1713335929.591710994]: GetROI sucess[0m
+clip_cloud_ptr 61827
+[0m[ INFO] [1713335929.592510631]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335929.731055987]: remove ground cost time:138 ms[0m
+[0m[ INFO] [1713335929.809259963]: euclidean cluster cost time:78 ms[0m
+[0m[ INFO] [1713335929.809288788]: total cost time:231 ms[0m
+[0m[ INFO] [1713335929.922670060]: GetROI sucess[0m
+clip_cloud_ptr 61996
+[0m[ INFO] [1713335929.923470075]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335930.062897838]: remove ground cost time:139 ms[0m
+[0m[ INFO] [1713335930.139110470]: euclidean cluster cost time:76 ms[0m
+[0m[ INFO] [1713335930.139134731]: total cost time:230 ms[0m
+[0m[ INFO] [1713335930.252821529]: GetROI sucess[0m
+clip_cloud_ptr 61525
+[0m[ INFO] [1713335930.253629317]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335930.399489883]: remove ground cost time:145 ms[0m
+[0m[ INFO] [1713335930.478980869]: euclidean cluster cost time:79 ms[0m
+[0m[ INFO] [1713335930.479003062]: total cost time:240 ms[0m
+[0m[ INFO] [1713335930.593696543]: GetROI sucess[0m
+clip_cloud_ptr 61167
+[0m[ INFO] [1713335930.594514372]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335930.745186792]: remove ground cost time:150 ms[0m
+[0m[ INFO] [1713335930.825330536]: euclidean cluster cost time:80 ms[0m
+[0m[ INFO] [1713335930.825373498]: total cost time:245 ms[0m
+[0m[ INFO] [1713335930.939720127]: GetROI sucess[0m
+clip_cloud_ptr 61114
+[0m[ INFO] [1713335930.940511090]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335931.084042860]: remove ground cost time:143 ms[0m
+[0m[ INFO] [1713335931.160541987]: euclidean cluster cost time:76 ms[0m
+[0m[ INFO] [1713335931.160566503]: total cost time:234 ms[0m
+[0m[ INFO] [1713335931.273497223]: GetROI sucess[0m
+clip_cloud_ptr 60942
+[0m[ INFO] [1713335931.274288925]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335931.418817641]: remove ground cost time:144 ms[0m
+[0m[ INFO] [1713335931.491987143]: euclidean cluster cost time:73 ms[0m
+[0m[ INFO] [1713335931.492011277]: total cost time:231 ms[0m
+[0m[ INFO] [1713335931.601046874]: GetROI sucess[0m
+clip_cloud_ptr 60949
+[0m[ INFO] [1713335931.601894426]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335931.746512092]: remove ground cost time:144 ms[0m
+[0m[ INFO] [1713335931.821643501]: euclidean cluster cost time:75 ms[0m
+[0m[ INFO] [1713335931.821666634]: total cost time:234 ms[0m
+[0m[ INFO] [1713335931.937172306]: GetROI sucess[0m
+clip_cloud_ptr 60593
+[0m[ INFO] [1713335931.937972948]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335932.085415535]: remove ground cost time:147 ms[0m
+[0m[ INFO] [1713335932.157891189]: euclidean cluster cost time:72 ms[0m
+[0m[ INFO] [1713335932.157915068]: total cost time:234 ms[0m
+[0m[ INFO] [1713335932.267159960]: GetROI sucess[0m
+clip_cloud_ptr 59842
+[0m[ INFO] [1713335932.267960940]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335932.408225791]: remove ground cost time:140 ms[0m
+[0m[ INFO] [1713335932.483993215]: euclidean cluster cost time:75 ms[0m
+[0m[ INFO] [1713335932.484016667]: total cost time:230 ms[0m
+[0m[ INFO] [1713335932.596011813]: GetROI sucess[0m
+clip_cloud_ptr 59983
+[0m[ INFO] [1713335932.596957406]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335932.740387163]: remove ground cost time:143 ms[0m
+[0m[ INFO] [1713335932.811784658]: euclidean cluster cost time:71 ms[0m
+[0m[ INFO] [1713335932.811809990]: total cost time:229 ms[0m
+[0m[ INFO] [1713335932.922432628]: GetROI sucess[0m
+clip_cloud_ptr 61505
+[0m[ INFO] [1713335932.923230911]: ROI_Clip cost time:15 ms[0m
+[0m[ INFO] [1713335933.071874122]: remove ground cost time:148 ms[0m
+[0m[ INFO] [1713335933.142723039]: euclidean cluster cost time:70 ms[0m
+[0m[ INFO] [1713335933.142745925]: total cost time:235 ms[0m
+[0m[ INFO] [1713335933.250070726]: GetROI sucess[0m
+clip_cloud_ptr 61437
+[0m[ INFO] [1713335933.250878665]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335933.401669241]: remove ground cost time:150 ms[0m
+[0m[ INFO] [1713335933.472986977]: euclidean cluster cost time:71 ms[0m
+[0m[ INFO] [1713335933.473009799]: total cost time:236 ms[0m
+[0m[ INFO] [1713335933.604297505]: GetROI sucess[0m
+clip_cloud_ptr 61010
+[0m[ INFO] [1713335933.605105769]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335933.758306737]: remove ground cost time:153 ms[0m
+[0m[ INFO] [1713335933.829979533]: euclidean cluster cost time:71 ms[0m
+[0m[ INFO] [1713335933.830002262]: total cost time:239 ms[0m
+[0m[ INFO] [1713335933.942680801]: GetROI sucess[0m
+clip_cloud_ptr 60761
+[0m[ INFO] [1713335933.943468111]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335934.091545249]: remove ground cost time:148 ms[0m
+[0m[ INFO] [1713335934.162548654]: euclidean cluster cost time:71 ms[0m
+[0m[ INFO] [1713335934.162572175]: total cost time:233 ms[0m
+[0m[ INFO] [1713335934.275832928]: GetROI sucess[0m
+clip_cloud_ptr 60797
+[0m[ INFO] [1713335934.276621122]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335934.435549375]: remove ground cost time:158 ms[0m
+[0m[ INFO] [1713335934.510467387]: euclidean cluster cost time:74 ms[0m
+[0m[ INFO] [1713335934.510506661]: total cost time:248 ms[0m
+[0m[ INFO] [1713335934.663108808]: GetROI sucess[0m
+clip_cloud_ptr 60769
+[0m[ INFO] [1713335934.663899123]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335934.822808632]: remove ground cost time:158 ms[0m
+[0m[ INFO] [1713335934.895485888]: euclidean cluster cost time:72 ms[0m
+[0m[ INFO] [1713335934.895530616]: total cost time:245 ms[0m
+[0m[ INFO] [1713335935.049245972]: GetROI sucess[0m
+clip_cloud_ptr 60541
+[0m[ INFO] [1713335935.050044845]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335935.202064058]: remove ground cost time:151 ms[0m
+[0m[ INFO] [1713335935.270362551]: euclidean cluster cost time:68 ms[0m
+[0m[ INFO] [1713335935.270384946]: total cost time:234 ms[0m
+[0m[ INFO] [1713335935.412242461]: GetROI sucess[0m
+clip_cloud_ptr 60105
+[0m[ INFO] [1713335935.413070074]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335935.557768253]: remove ground cost time:144 ms[0m
+[0m[ INFO] [1713335935.624075179]: euclidean cluster cost time:66 ms[0m
+[0m[ INFO] [1713335935.624099586]: total cost time:225 ms[0m
+[0m[ INFO] [1713335935.731961192]: GetROI sucess[0m
+clip_cloud_ptr 60493
+[0m[ INFO] [1713335935.732755224]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335935.877870241]: remove ground cost time:145 ms[0m
+[0m[ INFO] [1713335935.944919819]: euclidean cluster cost time:67 ms[0m
+[0m[ INFO] [1713335935.944942400]: total cost time:226 ms[0m
+[0m[ INFO] [1713335936.052265080]: GetROI sucess[0m
+clip_cloud_ptr 60772
+[0m[ INFO] [1713335936.053083792]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335936.201512112]: remove ground cost time:148 ms[0m
+[0m[ INFO] [1713335936.269367702]: euclidean cluster cost time:67 ms[0m
+[0m[ INFO] [1713335936.269390298]: total cost time:230 ms[0m
+[0m[ INFO] [1713335936.377008296]: GetROI sucess[0m
+clip_cloud_ptr 60909
+[0m[ INFO] [1713335936.377831404]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335936.526132738]: remove ground cost time:148 ms[0m
+[0m[ INFO] [1713335936.592677109]: euclidean cluster cost time:66 ms[0m
+[0m[ INFO] [1713335936.592702994]: total cost time:229 ms[0m
+[0m[ INFO] [1713335936.697764974]: GetROI sucess[0m
+clip_cloud_ptr 60645
+[0m[ INFO] [1713335936.698554520]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335936.845434822]: remove ground cost time:146 ms[0m
+[0m[ INFO] [1713335936.911674604]: euclidean cluster cost time:66 ms[0m
+[0m[ INFO] [1713335936.911698463]: total cost time:227 ms[0m
+[0m[ INFO] [1713335937.016931011]: GetROI sucess[0m
+clip_cloud_ptr 60237
+[0m[ INFO] [1713335937.017727606]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335937.170083238]: remove ground cost time:152 ms[0m
+[0m[ INFO] [1713335937.237056592]: euclidean cluster cost time:66 ms[0m
+[0m[ INFO] [1713335937.237080964]: total cost time:234 ms[0m
+[0m[ INFO] [1713335937.343937720]: GetROI sucess[0m
+clip_cloud_ptr 60492
+[0m[ INFO] [1713335937.344848520]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335937.493881484]: remove ground cost time:149 ms[0m
+[0m[ INFO] [1713335937.559017620]: euclidean cluster cost time:65 ms[0m
+[0m[ INFO] [1713335937.559040965]: total cost time:228 ms[0m
+[0m[ INFO] [1713335937.663437191]: GetROI sucess[0m
+clip_cloud_ptr 60527
+[0m[ INFO] [1713335869.414277522]: rviz version 1.14.20[0m
+[0m[ INFO] [1713335869.414334119]: compiled against Qt version 5.12.8[0m
+[0m[ INFO] [1713335869.414342849]: compiled against OGRE version 1.9.0 (Ghadamon)[0m
+[0m[ INFO] [1713335869.424925736]: Forcing OpenGl version 0.[0m
+[0m[ INFO] [1713335869.600534493]: Stereo is NOT SUPPORTED[0m
+[0m[ INFO] [1713335869.600561094]: OpenGL device: Mesa Intel(R) UHD Graphics 630 (CFL GT2)[0m
+[0m[ INFO] [1713335869.600571073]: OpenGl version: 4.6 (GLSL 4.6) limited to GLSL 1.4 on Mesa system.[0m
+[0m[ INFO] [1713335937.664241464]: ROI_Clip cost time:14 ms[0m
+[0m[ INFO] [1713335937.811201191]: remove ground cost time:146 ms[0m
+[0m[ INFO] [1713335937.874194364]: euclidean cluster cost time:62 ms[0m
+[0m[ INFO] [1713335937.874223642]: total cost time:224 ms[0m
+... logging to /home/sxy/.ros/log/9859513c-fc5c-11ee-a9d9-c5b6e74b0562/roslaunch-sxy-18945.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+]2;/home/sxy/lidar/src/lidarObstacleDetect/launch/lidar_obstacle_detection.launch
+[1mstarted roslaunch server http://sxy:44721/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /RNR_intensity_thr: 0.2
+ * /RNR_ver_angle_thr: -15.0
+ * /adaptive_seed_selection_margin: -1.2
+ * /cluster_merge_threshold: 0.75
+ * /cluster_tolerance: 0.5
+ * /czm/elevation_thresholds: [0.0, 0.0, 0.0, 0.0]
+ * /czm/flatness_thresholds: [0.0, 0.0, 0.0, 0.0]
+ * /czm/mum_rings_each_zone: [2, 4, 4, 4]
+ * /czm/num_sectors_each_zone: [16, 32, 54, 32]
+ * /czm/num_zones: 4
+ * /enable_RNR: False
+ * /enable_RVPF: True
+ * /enable_TGR: True
+ * /in_estimate_pose: False
+ * /is_downsample: False
+ * /leaf_size: 0.1
+ * /max_cluster_size: 10000
+ * /max_r: 80.0
+ * /min_cluster_size: 4
+ * /min_r: 2.7
+ * /mode: czm
+ * /num_iter: 3
+ * /num_lpr: 20
+ * /num_min_pts: 10
+ * /roi_x_max: 20.0
+ * /roi_x_min: -80.0
+ * /roi_y_max: 20.0
+ * /roi_y_min: -20.0
+ * /roi_z_max: 2.0
+ * /roi_z_min: -1.75
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /save_flag: True
+ * /sensor_height: 1.0
+ * /th_dist: 0.125
+ * /th_dist_v: 0.1
+ * /th_seeds: 0.3
+ * /th_seeds_v: 0.25
+ * /uprightness_thr: 0.707
+ * /use_multiple_thres: True
+ * /vehicle_x_max: 0.8
+ * /vehicle_x_min: -0.8
+ * /vehicle_y_max: 0.8
+ * /vehicle_y_min: -0.8
+ * /vehicle_z_max: 0.4
+ * /vehicle_z_min: -0.6
+ * /verbose: False
+ * /visualize: True
+
+NODES
+  /
+    lidar_obstacle_detection_node (lidar_obstacle_detection/lidar_obstacle_detection_node)
+    rviz (rviz/rviz)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/sxy/lidar/src/lidarObstacleDetect/launch/lidar_obstacle_detection.launch http://localhost:11311
+[1mprocess[lidar_obstacle_detection_node-1]: started with pid [18970][0m
+[1mprocess[rviz-2]: started with pid [18971][0m
+[rviz-2] killing on exit
+[lidar_obstacle_detection_node-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
