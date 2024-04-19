@@ -473,20 +473,20 @@ template<typename PointT>
 inline void PatchWorkpp<PointT>::reflected_noise_removal(pcl::PointCloud<PointT>& cloud_in,
                                                          pcl::PointCloud<PointT>& cloud_nonground)
 {
-    for (int i = 0; i < cloud_in.size(); i++)
-    {
-        double r = sqrt(cloud_in[i].x * cloud_in[i].x + cloud_in[i].y * cloud_in[i].y);
-        double z = cloud_in[i].z;
-        double ver_angle_in_deg = atan2(z, r) * 180 / M_PI;
+    // for (int i = 0; i < cloud_in.size(); i++)
+    // {
+    //     double r = sqrt(cloud_in[i].x * cloud_in[i].x + cloud_in[i].y * cloud_in[i].y);
+    //     double z = cloud_in[i].z;
+    //     double ver_angle_in_deg = atan2(z, r) * 180 / M_PI;
 
-        if (ver_angle_in_deg < RNR_ver_angle_thr_ && z < -sensor_height_ - 0.8 &&
-            cloud_in[i].intensity < RNR_intensity_thr_)
-        {
-            cloud_nonground.push_back(cloud_in[i]);
-            noise_pc_.push_back(cloud_in[i]);
-            noise_idxs_.push(i);
-        }
-    }
+    //     if (ver_angle_in_deg < RNR_ver_angle_thr_ && z < -sensor_height_ - 0.8 &&
+    //         cloud_in[i].intensity < RNR_intensity_thr_)
+    //     {
+    //         cloud_nonground.push_back(cloud_in[i]);
+    //         noise_pc_.push_back(cloud_in[i]);
+    //         noise_idxs_.push(i);
+    //     }
+    // }
 
     if (verbose_) cout << "[ RNR ] Num of noises : " << noise_pc_.points.size() << endl;
 }

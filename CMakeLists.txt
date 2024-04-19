@@ -4,6 +4,9 @@ project(lidar_obstacle_detection)
 SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
 SET(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall -lpthread")
 
+# 设置编译类型为 Debug
+set(CMAKE_BUILD_TYPE Release)
+
 find_package(catkin REQUIRED COMPONENTS
   autoware_msgs
   geometry_msgs

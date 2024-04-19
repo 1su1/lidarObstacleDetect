@@ -1,22 +1,40 @@
 #ifndef ROI_CLIP_H
 #define ROI_CLIP_H
 
+#include <boost/variant.hpp>
+
+#include <cv_bridge/cv_bridge.h>
+#include <image_transport/image_transport.h>
+#include <opencv2/core.hpp>
+#include <opencv2/highgui.hpp>
+#include <opencv2/imgproc.hpp>
 #include <opencv2/opencv.hpp>
 #include <pcl/point_types.h>
 #include <pcl_ros/point_cloud.h>
 #include <ros/ros.h>
+
 
 class RoiClip
 {
 public:
     RoiClip(ros::NodeHandle node_handle, ros::NodeHandle private_node_handle);
     ~RoiClip();
-    pcl::PointCloud<pcl::PointXYZI>::Ptr GetROI(const pcl::PointCloud<pcl::PointXYZI>::Ptr in,
-                                                pcl::PointCloud<pcl::PointXYZI>::Ptr&      out);
+    pcl::PointCloud<pcl::PointXYZI>::Ptr    GetROI(const pcl::PointCloud<pcl::PointXYZI>::Ptr in,
+                                                   pcl::PointCloud<pcl::PointXYZI>::Ptr&      out);
+    pcl::PointCloud<pcl::PointXYZRGBA>::Ptr GetFusionROI(
+        const pcl::PointCloud<pcl::PointXYZI>::Ptr in, const sensor_msgs::ImageConstPtr& image_msg,
+        pcl::PointCloud<pcl::PointXYZRGBA>::Ptr& out);
+
+private:
     pcl::PointCloud<pcl::PointXYZI>::Ptr ClipVehicle(const pcl::PointCloud<pcl::PointXYZI>::Ptr in);
 
-    bool point_in_camera(const pcl::PointXYZRGBA& point);
-    void draw_point_with_camera();
+    bool                            PointOutVechicle(const pcl::PointXYZI& input_point);
+    bool                            PointInROI(const pcl::PointXYZI& input_point);
+    boost::variant<cv::Point, bool> GetPixelInCamera(const pcl::PointXYZI&             input_point,
+                                                     const sensor_msgs::ImageConstPtr& image_msg);
+    void                            DrawPointWithCamera(pcl::PointXYZI&                          input_point,
+                                                        const sensor_msgs::ImageConstPtr&        image_msg,
+                                                        pcl::PointCloud<pcl::PointXYZRGBA>::Ptr& out);
 
 private:
     double             roi_x_min_;
@@ -25,6 +43,7 @@ private:
     double             roi_y_max_;
     double             roi_z_min_;
     double             roi_z_max_;
+    bool               is_reverse_;
     double             vehicle_x_min_;
     double             vehicle_x_max_;
     double             vehicle_y_min_;

@@ -32,9 +32,9 @@
 #include "pre_process/voxel_grid_filter/voxel_grid_filter.h"
 #include "visualization/visualize_detected_objects.h"
 #include <message_filters/subscriber.h>
-#include <message_filters/time_synchronizer.h>
 #include <message_filters/sync_policies/approximate_time.h>
 #include <message_filters/sync_policies/exact_time.h>
+#include <message_filters/time_synchronizer.h>
 
 class LidarObstacleDetection
 {
@@ -51,11 +51,13 @@ private:
     int64_t GetTime();
     void    PublishCloud(const ros::Publisher* in_publisher, std_msgs::Header header,
                          const pcl::PointCloud<pcl::PointXYZI>::Ptr in_cloud_to_publish_ptr);
+    void    PublishCloud(const ros::Publisher* in_publisher, std_msgs::Header header,
+                         const pcl::PointCloud<pcl::PointXYZRGBA>::Ptr in_cloud_to_publish_ptr);
 
 private:
-    RoiClip                     roi_clip_;
-    VoxelGridFilter             voxel_grid_filter_;
-    PatchWorkpp<pcl::PointXYZI> patch_work_;
+    RoiClip                        roi_clip_;
+    VoxelGridFilter                voxel_grid_filter_;
+    PatchWorkpp<pcl::PointXYZRGBA> patch_work_;
     // NewPatchWork<pcl::PointXYZRGBA> new_patch_work_;
 
     EuclideanCluster         cluster_;

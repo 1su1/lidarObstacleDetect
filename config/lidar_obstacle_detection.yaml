@@ -6,6 +6,8 @@ roi_y_max: 20.0
 roi_z_min: -1.75
 roi_z_max: 2.0
 
+is_reverse: true
+
 vehicle_x_min: -0.8 #转换到车辆坐标系下后，将车身点云切除，车辆坐标系中心为后轴中心０点
 vehicle_x_max: 0.8
 vehicle_y_min: -0.8
