@@ -1,14 +1,32 @@
 #ifndef ROI_CLIP_H
 #define ROI_CLIP_H
 
+#include <pcl/point_cloud.h>
 #include <pcl/point_types.h>
-#include <pcl_ros/point_cloud.h>
-#include <ros/ros.h>
+
+struct RoiClipParams
+{
+    // ROI clipping parameters
+    float roi_x_min;
+    float roi_x_max;
+    float roi_y_min;
+    float roi_y_max;
+    float roi_z_min;
+    float roi_z_max;
+
+    // Vehicle clipping parameters
+    float vehicle_x_min;
+    float vehicle_x_max;
+    float vehicle_y_min;
+    float vehicle_y_max;
+    float vehicle_z_min;
+    float vehicle_z_max;
+};
 
 class RoiClip
 {
 public:
-    RoiClip(ros::NodeHandle node_handle, ros::NodeHandle private_node_handle);
+    RoiClip(const RoiClipParams& params);
     ~RoiClip();
     pcl::PointCloud<pcl::PointXYZI>::Ptr GetROI(const pcl::PointCloud<pcl::PointXYZI>::Ptr in,
                                                 pcl::PointCloud<pcl::PointXYZI>::Ptr&      out);

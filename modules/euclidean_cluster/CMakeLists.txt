@@ -3,17 +3,12 @@ project(euclidean_cluster)
 
 add_compile_options(-std=c++14)
 
-find_package(catkin REQUIRED COMPONENTS
-  autoware_msgs
-  geometry_msgs
-  jsk_rviz_plugins
-)
-
+find_package(autoware_auto_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
 find_package(OpenCV REQUIRED)
 
 include_directories(
   ${OpenCV_INCLUDE_DIRS}
-  ${catkin_INCLUDE_DIRS}
 )
 
 aux_source_directory(. DIR_SRCS)

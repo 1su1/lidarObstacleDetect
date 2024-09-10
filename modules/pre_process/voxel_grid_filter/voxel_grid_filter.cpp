@@ -1,15 +1,9 @@
 #include "voxel_grid_filter.h"
 
-VoxelGridFilter::VoxelGridFilter()
+VoxelGridFilter::VoxelGridFilter(const DownsampleParams& params)
 {
-    // Do Nothing
-}
-
-VoxelGridFilter::VoxelGridFilter(ros::NodeHandle node_handle, ros::NodeHandle private_node_handle)
-{
-    /* Initialize tuning parameter */
-    private_node_handle.param("/is_downsample", is_downsample_, true);
-    private_node_handle.param("/leaf_size", leaf_size_, 0.1);
+    is_downsample_ = params.is_downsample;
+    leaf_size_     = params.leaf_size;
 }
 
 VoxelGridFilter::~VoxelGridFilter()

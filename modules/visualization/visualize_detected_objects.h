@@ -7,16 +7,12 @@
 #include <string>
 #include <vector>
 
-#include <ros/ros.h>
-#include <tf/transform_datatypes.h>
-
-#include <std_msgs/Header.h>
-
-#include <visualization_msgs/Marker.h>
-#include <visualization_msgs/MarkerArray.h>
-
-#include "autoware_msgs/DetectedObject.h"
-#include "autoware_msgs/DetectedObjectArray.h"
+#include <tf2/transform_datatypes.h>
+#include <std_msgs/msg/header.hpp>
+#include <visualization_msgs/msg/marker.hpp>
+#include <visualization_msgs/msg/marker_array.hpp>
+#include <autoware_auto_msgs/msg/detected_object.hpp>
+#include <autoware_auto_msgs/msg/detected_objects.hpp>
 
 #define __APP_NAME__ "visualize_detected_objects"
 

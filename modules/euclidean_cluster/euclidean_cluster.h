@@ -21,7 +21,7 @@ class EuclideanCluster
 {
 public:
     EuclideanCluster(ros::NodeHandle nh, ros::NodeHandle pnh);
-    ~EuclideanCluster(){};
+    ~EuclideanCluster() {};
     void cluster_vector(const pcl::PointCloud<pcl::PointXYZI>::Ptr in,
                         std::vector<pcl::PointIndices>&            indices);
     void segmentByDistance(const pcl::PointCloud<pcl::PointXYZI>::Ptr         in,
@@ -39,8 +39,7 @@ private:
     std::vector<double> clustering_distances_;
     std::vector<double> clustering_ranges_;
     bool                use_multiple_thres_;
-
-    std::mutex mutex_;   //先定义互斥锁
+    std::mutex          mutex_;   // 先定义互斥锁
 };
 
 #endif
